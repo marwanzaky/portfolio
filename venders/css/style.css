@@ -1,0 +1,197 @@
+/*------- BASIC SETUP -------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Cardo', serif;
+    /* font-family: 'Varela Round', sans-serif; */
+
+}
+
+:root {
+  --orange-color: #e67e22;
+  --oragne-dark-color: #cf6d17;
+  --white-color: #ffffff;
+  --black-color: #141c24;
+  --black-light-color: #89a4be;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --transition: 0.2s;
+}
+
+/*------- REUSEABLE COMPONENTS -------*/
+.row {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+ul {
+    padding-left: 30px;
+    margin-bottom: 30px;
+}
+
+li {
+    font-weight: 300;
+    list-style: none;
+}
+
+header {
+    padding-top: 50px;
+}
+
+section {
+    padding: 50px;
+}
+
+/*------- LINKS -------*/
+a:link, a:visited {
+  text-decoration: none;
+  color: var(--white-color);
+  /* border-bottom: 1px solid var(--orange-color); */
+  transition: border-bottom var(--transition), color var(--transition);
+}
+
+a:hover, a:active {
+  /* border-bottom: 1px solid transparent; */
+  color: var(--orange-color);
+}
+
+/*------- BUTTONS -------*/
+.btn:link,
+.btn:visited,
+input[type=submit] {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 300;
+  padding: 10px 30px;
+  border-radius: 200px;
+  transition: background-color var(--transition), border var(--transition), color var(--transition), transform var(--transition), filter var(--transition);
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+  background-color: var(--orange-color);
+  border: 1px solid var(--orange-color);
+  color: #fff;
+  margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+  border: 1px solid var(--orange-color);;
+  color: var(--orange-color);
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+  background-color: var(--oragne-dark-color);
+  transform: scale(1.05);
+  filter: drop-shadow(5px 5px 10px var(--shadow-color));
+}
+
+.btn-full:hover,
+.btn-full:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+  border: 1px solid var(--oragne-dark-color);
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+  border: 1px solid var(--oragne-dark-color);
+  color: #fff;
+}
+
+/*------- PARAPHRAPHS -------*/
+p {
+    margin-bottom: 50px;
+    font-weight: 300;
+    line-height: 145%;
+    width: 600px;
+}
+
+/*------- HEADINGS -------*/
+h1 {
+    margin-bottom: 30px;
+    font-size: 400%;
+    font-weight: 100;
+    letter-spacing: 1%;
+    word-spacing: 4px;
+    text-transform: capitalize;
+}
+
+h2 {
+    margin-bottom: 5px;
+    font-size: 120%;
+}
+
+h3 {
+    margin-bottom: 15px;
+}
+
+/*------- SECTION-BIO -------*/
+.bio-box {
+    margin-top: 150px;
+}
+
+.bio-text, .bio-parag {
+    color: white;
+}
+
+.bio-text {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.section-bio {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../img/bg1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 80vh;
+}
+
+/*------- PORTFOLIO -------*/
+.portfolio-box {
+  display: flex;
+  flex-direction: row;
+  height: 800px;
+}
+
+.portfolio-imgs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.portfolio-imgs, .portfolio-info {
+  width: 100%;
+  padding: 50px 20px;
+}
+
+.portfolio-img {
+  width: 400px;
+  margin-top: 10px;
+  opacity: 0.9;
+  transition: opacity var(--transition), transform var(--transition);
+}
+
+.portfolio-img:hover {
+  opacity: 1;
+transform: scale(1.03);
+ filter: drop-shadow(5px 5px 10px var(--shadow-color));
+}
+
+/*------- SOCIAL MEDIA -------*/
+.section-contact {
+    background-color: var(--black-color);
+}
+
+.contact-text {
+    color: var(--white-color);
+}
