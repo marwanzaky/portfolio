@@ -67,7 +67,7 @@ input[type=submit] {
   text-decoration: none;
   font-weight: 300;
   padding: 10px 30px;
-  border-radius: 200px;
+  border-radius: 8px;
   transition: background-color var(--transition), border var(--transition), color var(--transition), transform var(--transition), filter var(--transition);
 }
 
@@ -153,7 +153,7 @@ h3 {
 }
 
 .bio-text {
-    font-family: 'Varela Round', sans-serif;
+    /* font-family: 'Varela Round', sans-serif; */
 }
 
 .section-bio {
@@ -165,10 +165,14 @@ h3 {
 }
 
 /*------- PORTFOLIO -------*/
+.section-portfolio {
+  /* background-color: var(--black-light-color); */
+}
+
 .portfolio-box {
   display: flex;
   flex-direction: row;
-  height: 800px;
+  /* height: 800px; */
 }
 
 .portfolio-imgs {
@@ -183,16 +187,16 @@ h3 {
 }
 
 .portfolio-img {
-  width: 400px;
+  width: 300px;
   margin-top: 10px;
-  opacity: 0.9;
-  transition: opacity var(--transition), transform var(--transition);
+  opacity: 1;
+  transition: opacity var(--transition), transform var(--transition), filter var(--transition);
 }
 
 .portfolio-img:hover {
   opacity: 1;
-transform: scale(1.03);
- filter: drop-shadow(5px 5px 10px var(--shadow-color));
+  transform: scale(1.03);
+  filter: drop-shadow(5px 5px 10px var(--shadow-color));
 }
 
 /*------- SOCIAL MEDIA -------*/
