@@ -187,14 +187,12 @@ h3 {
 }
 
 .portfolio-img img {
-  /* height: 100%; */
   width: 100%;
-  transition:  transform 0.5s, filter var(--transition);
+  transition:  transform var(--transition);
 }
 
 .portfolio-img img:hover {
-  /* transform: scale(1.3); */
-  filter: drop-shadow(5px 5px 10px var(--shadow-color));
+  transform: scale(1.1);
 }
 
 /*------- SOCIAL MEDIA -------*/
