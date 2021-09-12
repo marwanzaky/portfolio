@@ -13,8 +13,8 @@ body {
 }
 
 :root {
-  --orange-color: #e67e22;
-  --oragne-dark-color: #cf6d17;
+  --orange-color: #e74c3c;
+  --oragne-dark-color: #c0392b;
   --white-color: #ffffff;
   --black-color: #141c24;
   --black-light-color: #89a4be;
@@ -68,7 +68,7 @@ input[type=submit] {
   font-weight: 300;
   padding: 10px 30px;
   border-radius: 8px;
-  transition: background-color var(--transition), border var(--transition), color var(--transition), transform var(--transition), filter var(--transition);
+  transition: background-color var(--transition), border var(--transition), color var(--transition), transform var(--transition);
 }
 
 .btn-full:link,
@@ -92,7 +92,6 @@ input[type=submit]:hover,
 input[type=submit]:active {
   background-color: var(--oragne-dark-color);
   transform: scale(1.05);
-  filter: drop-shadow(5px 5px 10px var(--shadow-color));
 }
 
 .btn-full:hover,
