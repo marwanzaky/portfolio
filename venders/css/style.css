@@ -1,13 +1,13 @@
 /*------- BASIC SETUP -------*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-size: 15px;
-    font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
 }
 
 :root {
@@ -230,7 +230,6 @@ header {
   font-weight: var(--light-font);
   text-align: center;
   line-height: 200%;
-  /* margin: 0; */
 }
 
 .skill div {
@@ -260,12 +259,6 @@ header {
 .skill-icon:hover,
 .skill-icon:active {
   transform: scale(1.1);
-}
-
-.skill:hover,
-.skill:active {
-  /* box-shadow: 0px 0px 50px var(--white-dark-color); */
-  /* background-color: var(--white-color); */
 }
 
 /*------- SOCIAL MEDIA -------*/
