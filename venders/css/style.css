@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-body {
+body, input, textarea{
   font-size: 15px;
   font-family: 'Poppins', sans-serif;
 }
@@ -23,6 +23,7 @@ body {
   --regular-font: 400;
   --bold-font: 600;
   --border-radius: 12px;
+  --line-width: 1px;
 }
 
 /*------- REUSEABLE COMPONENTS -------*/
@@ -31,7 +32,7 @@ body {
   margin: 0 auto;
 }
 
-section {
+section, footer{
   padding: 50px;
 }
 
@@ -39,10 +40,27 @@ ul {
   list-style: none;
 }
 
+/*------- FORM -------*/
+input[type=text], textarea {
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+  margin-bottom: 15px; 
+  border-radius: var(--border-radius);
+  background-color: var(--white-dark-color);
+  border: 0;
+  outline: 0;
+  resize: vertical;
+}
+
+textarea {
+  padding: 20px;
+  min-height: 150px;
+}
+
 /*------- BUTTONS -------*/
 .btn:link,
-.btn:visited,
-input[type=submit] {
+.btn:visited {
   display: inline-block;
   text-decoration: none;
   font-weight: var(--light-font);
@@ -52,37 +70,32 @@ input[type=submit] {
 }
 
 .btn-full:link,
-.btn-full:visited,
-input[type=submit] {
+.btn-full:visited {
   background-color: var(--red-color);
-  border: 1px solid var(--red-color);
+  border: var(--line-width) solid var(--red-color);
   color: #fff;
   margin-right: 15px;
 }
 
 .btn-ghost:link,
 .btn-ghost:visited {
-  border: 1px solid var(--red-color);;
+  border: var(--line-width) solid var(--red-color);;
   color: var(--red-color);
 }
 
 .btn:hover,
-.btn:active,
-input[type=submit]:hover,
-input[type=submit]:active {
+.btn:active {
   background-color: var(--red-dark-color);
 }
 
 .btn-full:hover,
-.btn-full:active,
-input[type=submit]:hover,
-input[type=submit]:active {
-  border: 1px solid var(--red-dark-color);
+.btn-full:active {
+  border: var(--line-width) solid var(--red-dark-color);
 }
 
 .btn-ghost:hover,
 .btn-ghost:active {
-  border: 1px solid var(--red-dark-color);
+  border: var(--line-width) solid var(--red-dark-color);
   color: #fff;
 }
 
@@ -261,12 +274,46 @@ header {
   transform: scale(1.1);
 }
 
+/*------- CONTACT US -------*/
+.section-contact-me {
+   background-color: var(--white-color);
+}
+
+.contact-me-box {
+  display: flex;
+}
+
+.contact-me-box-child {
+  width: 50%;
+  padding: 20px;
+}
+
+.contact-me-container{
+  border-radius: var(--border-radius);
+}
+
+.name-form {
+  display: flex;
+  justify-content: space-between;
+  /* justify-content: space-between; */
+  /* align-items: flex-start; */
+}
+
+.name-form input {
+  width: 49%;
+}
+
 /*------- SOCIAL MEDIA -------*/
-.section-contact {
+footer {
   background-color: var(--black-color);
 }
 
-.contact-box {
+footer p {
+  margin: 0;
+  color: var(--white-color);
+}
+
+.footer-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -286,9 +333,4 @@ header {
 .social-media a:hover,
 .social-media a:active {
   color: var(--red-color);
-}
-
-.section-contact p {
-  margin: 0;
-  color: var(--white-color);
 }

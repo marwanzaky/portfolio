@@ -30,7 +30,7 @@
                 <li><a href="#" onclick="jump('section-what-i-do'); return false;">About</a></li>
                 <li><a href="#" onclick="jump('section-skills'); return false;">Skills</a></li>
                 <li><a href="#" onclick="jump('section-skills'); return false;">Portfolio</a></li>
-                <li><a href="#" onclick="jump('section-contact'); return false;">Contact me</a></li>
+                <li><a href="#" onclick="jump('section-contact-me'); return false;">Contact me</a></li>
             </ul>
         </div>
 
@@ -92,8 +92,36 @@
         </div>
     </section>
 
-    <section class="section-contact">
-        <div class="row contact-box">
+    <section class="section-contact-me">
+        <div class="row contact-me-box">
+            <div class="contact-me-box-child">
+                <h2>Contact us</h2>
+                <p>I’m interested in freelance opportunities – especially ambitious or large projects. However, if you
+                    have
+                    other request
+                    or question, don’t hesitate to use the form.
+                </p>
+            </div>
+
+            <div class="contact-me-box-child contact-me-container">
+                <form action="">
+                    <class class="name-form">
+                        <input type="text" id="fname" name="firstname" placeholder="First Name">
+                        <input type="text" id="lname" name="lastname" placeholder="Last Name">
+                    </class>
+
+                    <input type="text" id="email" name="email" placeholder="Email">
+                    <input type="text" id="subject" name="subject" placeholder="Subject">
+                    <textarea id="message" id="message" placeholder="Message"></textarea>
+
+                    <a class="btn btn-ghost" href="#">Send</a>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="row footer-box">
             <div>
                 <p>Copyright &copy; 2021 by Marwan Zaky. All rights reserved.</p>
             </div>
@@ -137,7 +165,7 @@
                 </ul>
             </div>
         </div>
-    </section>
+    </footer>
 
     <script src="venders/js/navigator.js"></script>
 </body>
