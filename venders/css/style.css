@@ -41,7 +41,8 @@ ul {
 }
 
 /*------- FORM -------*/
-input[type=text], textarea {
+input[type=text],
+textarea {
   width: 100%;
   height: 50px;
   padding: 0 20px;
