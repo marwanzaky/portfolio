@@ -43,6 +43,7 @@ ul {
 /*------- FORM -------*/
 input[type=text],
 textarea {
+  font-weight: var(--light-font);
   width: 100%;
   height: 50px;
   padding: 0 20px;
