@@ -46,11 +46,18 @@ input[type=text], textarea {
   height: 50px;
   padding: 0 20px;
   margin-bottom: 15px; 
+  outline: none;
+  box-shadow: none;
+  border: none;
   border-radius: var(--border-radius);
   background-color: var(--white-dark-color);
-  border: 0;
-  outline: 0;
   resize: vertical;
+  transition: box-shadow var(--transition);
+}
+
+input[type=text]:focus,
+textarea:focus {
+  box-shadow: 0 0 0 2pt cornflowerblue;
 }
 
 textarea {
@@ -301,8 +308,6 @@ header {
 .name-form {
   display: flex;
   justify-content: space-between;
-  /* justify-content: space-between; */
-  /* align-items: flex-start; */
 }
 
 .name-form input {
