@@ -104,7 +104,7 @@
             </div>
 
             <div class="contact-me-box-child contact-me-container">
-                <form action="">
+                <form action="mailto:marwanzaky.dev@gmail.com">
                     <class class="name-form">
                         <input type="text" id="fname" name="firstname" placeholder="First Name">
                         <input type="text" id="lname" name="lastname" placeholder="Last Name">
@@ -112,9 +112,9 @@
 
                     <input type="text" id="email" name="email" placeholder="Email">
                     <input type="text" id="subject" name="subject" placeholder="Subject">
-                    <textarea id="message" id="message" placeholder="Message"></textarea>
+                    <textarea id="body" id="body" placeholder="Message"></textarea>
 
-                    <a class="btn btn-ghost" href="#">Send</a>
+                    <a class="btn btn-full" href="#" onclick="sendEmail(); return false;">Send</a>
                 </form>
             </div>
         </div>
@@ -168,6 +168,7 @@
     </footer>
 
     <script src="venders/js/navigator.js"></script>
+    <script src="venders/js/form.js"></script>
 </body>
 
 </html>
