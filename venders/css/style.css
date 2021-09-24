@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-body, input, textarea{
+body, input, textarea {
   font-size: 15px;
   font-family: 'Poppins', sans-serif;
 }
