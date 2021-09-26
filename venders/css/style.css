@@ -257,7 +257,6 @@ header {
 .skills-box p {
   font-weight: var(--light-font);
   text-align: center;
-  line-height: 200%;
 }
 
 .skill div {
@@ -319,7 +318,6 @@ header {
   padding-bottom: 15px;
   top: 0;
   right: 10px;
-  font-size: 100%;
   color: var(--black-color);
 }
 
