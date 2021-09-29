@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hi, I'm Marwan.</title>
     <link rel="stylesheet" href="venders/css/style.css">
-    <link rel="icon" href="./venders/img/icon.png">
+    <link rel="icon" href="venders/img/icon.png">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,16 +24,7 @@
 
 <body>
     <header>
-        <div class="row main">
-            <a class="logo" href="https://www.marwanzaky.com/">mz</a>
-
-            <ul class="main-nav">
-                <li><a href="#" onclick="jump('section-what-i-do'); return false;">About</a></li>
-                <li><a href="#" onclick="jump('section-skills'); return false;">Skills</a></li>
-                <li><a href="#" onclick="jump('section-skills'); return false;">Portfolio</a></li>
-                <li><a href="#" onclick="jump('section-contact-me'); return false;">Contact me</a></li>
-            </ul>
-        </div>
+        <div id="header"></div>
 
         <div class="header-box">
             <h1 class="header-text">Hy! I am<br>Marwan Zaky</h1>
@@ -172,48 +164,9 @@
         </div>
     </section>
 
-    <footer>
-        <div class="row footer-box">
-            <div>
-                <p>Copyright &copy; 2021 by Marwan Zaky. All rights reserved.</p>
-            </div>
+    <div id="footer"></div>
 
-            <div>
-                <ul class="social-media">
-                    <li>
-                        <a href="mailto: marwanzaky.dev@gmail.com">
-                            <i class="fas fa-paper-plane"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://www.linkedin.com/in/marwan-zaky/" target="blank">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://twitter.com/marwan_zaky_dev" target="blank">
-                            <i class="fab fa-twitter" aria-hidden="true"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://www.github.com/marwanzaky" target="blank">
-                            <i class="fab fa-github" aria-hidden="true"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://www.youtube.com/channel/UCsXRt9DX4zIoLq_WO5Pns2A" target="blank">
-                            <i class="fab fa-youtube" aria-hidden="true"></i> </a>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-
+    <script src="venders/js/load.js"></script>
     <script src="venders/js/navigator.js"></script>
     <script src="venders/js/form.js"></script>
 </body>

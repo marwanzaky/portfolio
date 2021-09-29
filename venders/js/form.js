@@ -1,11 +1,11 @@
 function sendEmail() {
     var email = 'marwanzaky.dev@gmail.com';
-    var subject = $('subject').value;
-    var body = $('body').value;
+    var subject = Get('subject').value;
+    var body = Get('body').value;
     var url = 'mailto:' + email + '?subject=' + subject + '&body=' + body;
     window.open(url);
 }
 
-function $(elementID) {
+function Get(elementID) {
     return document.getElementById(elementID);
 }
