@@ -395,3 +395,8 @@ footer p {
 .social-media a:active {
   color: var(--red-color);
 }
+
+/*------- BLOG -------*/
+.blog {
+  margin-bottom: 100px;
+}

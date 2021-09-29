@@ -18,12 +18,13 @@ var posts = [
 var blogs = '';
 
 posts.forEach(el => {
-    blogs += `<div>
-        <div>${el.title}</div>
-        <div>${el.des}</div>
+    blogs += `
+    <div class="blog">
+        <h2>${el.title}</h2>
+        <p>${el.des}</p>
         <img src="${el.img}" alt="" style="height: 200px;">
-    </d`
+    </div`
 });
 
-
 document.querySelector('.blogs').innerHTML = blogs;
+console.log(blogs);
