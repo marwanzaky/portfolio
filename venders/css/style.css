@@ -457,11 +457,11 @@ footer p {
   margin: 0;
   padding: 0;
   color: white;
-  font-size: 150%;
+  font-size: 100%;
 }
 
 .blog-info h1 {
-  font-weight: var(--regular-font);
+  font-weight: var(--bold-font);
 }
 
 .blog-info h2 {
