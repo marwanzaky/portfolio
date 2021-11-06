@@ -1,39 +1,32 @@
+class Post {
+    constructor(title, skills, img, url) {
+        this.title = title;
+        this.skills = skills;
+        this.img = img;
+        this.url = url;
+    }
+
+    getHTML() {
+        return `<div class="blog">
+                    <a href="${this.url}" target="_blank" style="display:inline-block; line-height:0;">
+                        <img width="100%" src="${this.img}" alt="">
+                        <div class="blog-info">${this.title}</div>
+                    </a>
+                </div>`
+    }
+};
+
 var posts = [
-    {
-        title: 'Enemy Vision',
-        des: 'Enemy Vision is a script collection to add vision cones, raycast detection, and enemy patrolling behaviors to your game.',
-        date: 'September 30, 2021',
-        img: 'venders/img/enemy-vision.png',
-        link: 'https://github.com/marwanzaky/Enemy-Vision'
-    },
-    {
-        title: 'Audio Manager Tool',
-        des: 'Unity Audio Manager is a tool to manage your Audios',
-        date: 'September 30, 2021',
-        img: 'venders/img/audio-manager-tool.png',
-        link: 'https://github.com/marwanzaky/Unity-Audio-Manager'
-    }, {
-        title: 'Unity Screenshot Tool for Capturing the current frame',
-        des: 'Unity Audio Manager is a tool to manage your Audios',
-        date: 'September 30, 2021',
-        img: 'venders/img/screenshot-tool.png',
-        link: 'https://github.com/marwanzaky/Unity-Screenshot-Tool'
-    },
+    new Post('Enemy Vision', 'Unity, C#', 'venders/img/enemy-vision.png', 'https://github.com/marwanzaky/Enemy-Vision'),
+    new Post('Unity Pathfinder', 'Unity, C#', 'venders/img/pathfinder.png', 'https://github.com/marwanzaky/Unity-Pathfinder'),
+    new Post('Quick Tool', 'Unity, C#', 'venders/img/quick-tool.png', 'https://github.com/marwanzaky/Quick-Tool'),
+    new Post('Screenshot Tool', 'Unity, C#', 'venders/img/screenshot-tool.png', 'https://github.com/marwanzaky/Unity-Screenshot-Tool'),
+    new Post('Audio Manager', 'Unity, C#', 'venders/img/audio-manager.png', 'https://github.com/marwanzaky/Unity-Audio-Manager'),
+    new Post('Coming soon', 'Unity, C#', 'venders/img/coming-soon.png', 'https://github.com/marwanzaky'),
+    new Post('Coming soon', 'Unity, C#', 'venders/img/coming-soon.png', 'https://github.com/marwanzaky'),
+    new Post('Coming soon', 'Unity, C#', 'venders/img/coming-soon.png', 'https://github.com/marwanzaky')
 ];
 
-var blogs = '';
-
-posts.forEach(el => {
-    blogs += `
-    <article class="blog">
-        <h4>${el.date}</h4>
-        <div class="blog-cover">
-            <a href="${el.link}" target=”_blank”><img src="${el.img}" alt="${el.img}"></a>
-        </div>
-        <h3>${el.title}</h3>
-        <p>${el.des}</p>
-        <a href="#" class="blog-readmore">Read More »</a>
-    </article>`
-});
-
-document.querySelector('.blogs').innerHTML = blogs;
+for (let index = 0; index < posts.length; index++) {
+    document.querySelector('.blog-box').innerHTML += posts[index].getHTML();
+}
