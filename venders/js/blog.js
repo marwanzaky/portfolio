@@ -10,7 +10,9 @@ class Post {
         return `<div class="blog">
                     <a href="${this.url}" target="_blank" style="display:inline-block; line-height:0;">
                         <img width="100%" src="${this.img}" alt="">
-                        <div class="blog-info">${this.title}</div>
+                        <div class="blog-info">
+                            <h1>${this.title}</h1>
+                        </div>
                     </a>
                 </div>`
     }
@@ -18,7 +20,7 @@ class Post {
 
 var posts = [
     new Post('Enemy Vision', 'Unity, C#', 'venders/img/enemy-vision.png', 'https://github.com/marwanzaky/Enemy-Vision'),
-    new Post('Unity Pathfinder', 'Unity, C#', 'venders/img/pathfinder.png', 'https://github.com/marwanzaky/Unity-Pathfinder'),
+    new Post('Pathfinder', 'Unity, C#', 'venders/img/pathfinder.png', 'https://github.com/marwanzaky/Unity-Pathfinder'),
     new Post('Quick Tool', 'Unity, C#', 'venders/img/quick-tool.png', 'https://github.com/marwanzaky/Quick-Tool'),
     new Post('Screenshot Tool', 'Unity, C#', 'venders/img/screenshot-tool.png', 'https://github.com/marwanzaky/Unity-Screenshot-Tool'),
     new Post('Audio Manager', 'Unity, C#', 'venders/img/audio-manager.png', 'https://github.com/marwanzaky/Unity-Audio-Manager'),
