@@ -261,11 +261,6 @@ header {
   grid-template-columns: auto auto auto;
 }
 
-.skills-box i {
-  color: var(--red-color); 
-  font-size: 300%;
-}
-
 .skills-box p {
   font-weight: var(--light-font);
   text-align: center;
@@ -292,12 +287,14 @@ header {
 
 .skill-icon:link,
 .skill-icon:visited {
-  transition: transform var(--transition);
+  font-size: 300%;
+  color: var(--red-color);
+  transition: color var(--transition);
 }
 
 .skill-icon:hover,
 .skill-icon:active {
-  transform: scale(1.1);
+  color: var(--red-dark-color);
 }
 
 /*------- CONTACT US -------*/
