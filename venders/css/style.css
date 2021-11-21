@@ -251,11 +251,34 @@ header {
   word-spacing: 4px;
 }
 
-/*------- SKILLS -------*/
-.section-skills {
+/*------- LATEST WORK -------*/
+.section-latest-work {
   background-color: var(--white-dark-color);
 }
 
+.latest-work-box {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  column-gap: 5px;
+  row-gap: 5px;
+}
+
+.latest-work {
+  overflow: hidden;
+  background-color: #000;
+}
+
+.latest-work img {
+  opacity: 1;
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.latest-work img:hover {
+  opacity: 0.9;
+  transform: scale(1.05); 
+}
+
+/*------- SKILLS -------*/
 .skills-box {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -295,6 +318,40 @@ header {
 .skill-icon:hover,
 .skill-icon:active {
   color: var(--red-dark-color);
+}
+
+/*------- TESTIMONIALS -------*/
+.section-testimonials {
+  background-color: var(--white-dark-color);
+}
+
+.testimonials-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.testimonial i {
+  font-size: 120%;
+  margin-bottom: 15px;
+}
+
+.testimonial {
+  width: 32%;
+}
+
+.testimonial blockquote {
+  font-style: italic;
+  font-weight: var(--light-font);
+}
+
+.testimonial cite:before{
+  content: '\2014 \0020';
+}
+
+.testimonial cite {
+  display: block;
+  margin-top: 20px;
 }
 
 /*------- CONTACT US -------*/
@@ -338,39 +395,6 @@ header {
   opacity: 1;
 }
 
-/*------- TESTIMONIALS -------*/
-.section-testimonials {
-  background-color: var(--white-dark-color);
-}
-
-.testimonials-box {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.testimonial i {
-  font-size: 120%;
-  margin-bottom: 15px;
-}
-
-.testimonial {
-  width: 32%;
-}
-
-.testimonial blockquote {
-  font-style: italic;
-  font-weight: var(--light-font);
-}
-
-.testimonial cite:before{
-  content: '\2014 \0020';
-}
-
-.testimonial cite {
-  display: block;
-  margin-top: 20px;
-}
 
 /*------- FOOTER -------*/
 footer {

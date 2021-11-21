@@ -20,7 +20,7 @@ class Post {
 
 var posts = [
     new Post('Enemy Vision', 'Unity, C#', 'venders/img/enemy-vision.png', 'https://github.com/marwanzaky/Enemy-Vision'),
-    new Post('Pathfinder', 'Unity, C#', 'venders/img/pathfinder.png', 'https://github.com/marwanzaky/Unity-Pathfinder'),
+    new Post('Pathfinder', 'Unity, C#', 'venders/img/latest-work/car-puzzle.png', 'https://github.com/marwanzaky/Unity-Pathfinder'),
     new Post('Quick Tool', 'Unity, C#', 'venders/img/quick-tool.png', 'https://github.com/marwanzaky/Quick-Tool'),
     new Post('Screenshot Tool', 'Unity, C#', 'venders/img/screenshot-tool.png', 'https://github.com/marwanzaky/Unity-Screenshot-Tool'),
     new Post('Audio Manager', 'Unity, C#', 'venders/img/audio-manager.png', 'https://github.com/marwanzaky/Unity-Audio-Manager'),
