@@ -259,8 +259,8 @@ header {
 .latest-work-box {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  column-gap: 5px;
-  row-gap: 5px;
+  column-gap: 15px;
+  row-gap: 15px;
 }
 
 .latest-work {
