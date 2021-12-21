@@ -40,6 +40,12 @@ ul {
   list-style: none;
 }
 
+.icon {
+  width: 32px;
+  height: 32px;
+  vertical-align: top;
+}
+
 /*------- FORM -------*/
 input[type=text],
 textarea {
@@ -465,6 +471,18 @@ footer p {
 .social-media a:active {
   color: var(--red-color);
 }
+
+.social-media img:link,
+.social-media img:visited {
+  transition: filter var(--transition);
+  filter: invert(100%) sepia(38%) saturate(0%) hue-rotate(94deg) brightness(109%) contrast(101%);
+}
+
+.social-media img:hover,
+.social-media img:active {
+  filter: invert(34%) sepia(70%) saturate(2337%) hue-rotate(342deg) brightness(97%) contrast(86%);
+}
+
 
 /*------- BLOG -------*/
 .section-blog {
