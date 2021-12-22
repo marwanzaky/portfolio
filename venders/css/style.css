@@ -370,9 +370,18 @@ header {
 }
 
 .testimonials-box {
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.testimonials-wrapper {
+  width: 199.98%;
+
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
+
+  transition: margin 1s;
 }
 
 .testimonial i {
@@ -381,7 +390,8 @@ header {
 }
 
 .testimonial {
-  width: 32%;
+  width: 33.33%;
+  padding-right: 25px;
 }
 
 .testimonial blockquote {
@@ -396,6 +406,29 @@ header {
 .testimonial cite {
   display: block;
   margin-top: 20px;
+}
+
+.indicators {
+  display: flex;
+  justify-content: center;
+}
+
+.indicators button {
+  background: var(--white-color) ;
+  border: none;
+  outline: none; 
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--red-color);
+  margin-left: 10px;
+  transition: background var(--transition), border-radius var(--transition), width var(--transition);
+}
+
+button.active {
+  width: 24px;
+  border-radius: 50px;
+  background: var(--red-color)
 }
 
 /*------- CONTACT US -------*/
