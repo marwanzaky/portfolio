@@ -24,6 +24,25 @@
     <!-- ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- firebase analytics -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-analytics.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyBW3Tyj4EBYmp3uwugWZAw-ZDzFXlU72BQ",
+            authDomain: "marwanzaky-c11ed.firebaseapp.com",
+            projectId: "marwanzaky-c11ed",
+            storageBucket: "marwanzaky-c11ed.appspot.com",
+            messagingSenderId: "429386869248",
+            appId: "1:429386869248:web:35730b6039a44597bc46e5",
+            measurementId: "G-10T2ZY0QDS"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
 </head>
 
 <body>
