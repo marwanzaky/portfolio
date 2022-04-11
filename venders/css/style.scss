@@ -455,6 +455,66 @@ header {
   }
 }
 
+/*------- TIMELINE -------*/
+.section-timeline {
+  background-color: var(--color-primary);
+}
+
+.timeline-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+
+  .timeline-item {
+    position: relative;
+    padding-left: 3rem;
+    border-left: 1px solid var(--color-black-light);
+
+    .timeline-icon {
+      position: absolute;
+      left: -25px;
+      top: 0;
+      background-color: var(--color-black-light);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+
+      ion-icon {
+        color: var(--color-primary);
+      }
+    }
+
+    .timeline-duration {
+      margin: 0 0 20px 0;
+      display: inline-block;
+      background-color: var(--color-black);
+      color: var(--color-primary);
+      font-size: .8rem;
+      font-weight: var(--font-bold);
+      padding: 4px 12px;
+      border-radius: 15px;
+      text-transform: uppercase;
+    }
+
+    .timeline-title {
+      margin: 0 0 20px 0;
+      font-size: 105%;
+      font-weight: var(--font-bold);
+      text-transform: uppercase;
+
+      span {
+        color: var(--color-grey);
+        font-size: 95%;
+        font-weight: var(--font-bold);
+      }
+    }
+  }
+}
+
 /*------- TESTIMONIALS -------*/
 .section-testimonials {
   background-color: var(--color-primary-dark);
