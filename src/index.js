@@ -10,6 +10,8 @@ import Contact from './contact';
 import Footer from './footer';
 import Testimonials from './testimonials';
 
+import './css/style.css';
+
 ReactDOM.render(<Navigation />, document.querySelector('#navigation'));
 ReactDOM.render(<Skills />, document.querySelector('.skills-box'));
 ReactDOM.render(<Works />, document.querySelector('.latest-work-box'));

@@ -1,3 +1,4 @@
+import freelancerSVG from './svg/freelancer-icon.svg';
 
 function List(props) {
     return <li>
@@ -6,6 +7,7 @@ function List(props) {
         </a>
     </li>
 }
+
 
 function ListImg(props) {
     return <li>
@@ -23,7 +25,7 @@ export default function Footer() {
             <div>
                 <ul class="social-media">
                     <List url='mailto: contact@marwanzaky.com' name='send-outline' />
-                    <ListImg url='https://www.freelancer.com/u/marwanezzaky' src='/venders/svg/freelancer-icon.svg' />
+                    <ListImg url='https://www.freelancer.com/u/marwanezzaky' src={freelancerSVG} />
                     <List url='https://www.linkedin.com/in/marwan-zaky/' name='logo-linkedin' />
                     <List url='https://twitter.com/marwan_zaky_dev' name='logo-twitter' />
                     <List url='https://www.github.com/marwanzaky' name='logo-github' />
