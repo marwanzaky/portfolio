@@ -19,7 +19,7 @@ function SendEmail() {
         sendEmail();
     }
 
-    return <a className="btn btn-full" href="#" onClick={onClick}>Send</a>;
+    return <a className="btn btn-full" href="index.html" onClick={onClick}>Send</a>;
 }
 
 export default function Contact() {
