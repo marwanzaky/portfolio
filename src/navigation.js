@@ -9,7 +9,7 @@ function List(props) {
     }
 
     return <li>
-        <a href="#" onClick={jump}>
+        <a href="index.html" onClick={jump}>
             {props.name}
         </a>
     </li>
