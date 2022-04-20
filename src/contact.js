@@ -16,7 +16,7 @@ function Textarea(props) {
 
 function SendEmail() {
     const onClick = () => {
-        sendEmail();
+        sendEmail.send();
     }
 
     return <a className="btn btn-full" href="index.html" onClick={onClick}>Send</a>;

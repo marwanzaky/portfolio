@@ -2,7 +2,7 @@ function get(elementID) {
     return document.getElementById(elementID);
 }
 
-export default function () {
+export default function send() {
     var email = 'contact@marwanzaky.com';
     var subject = get('subject').value;
     var body = get('body').value;
