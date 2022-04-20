@@ -8,7 +8,9 @@ function Skill(props) {
     }
 
     function URL() {
-        return <a href={props.href} className={props.class} target="blank"></a>
+        return <a href={props.href} className={props.class} target="blank">
+            <ion-icon name={props.name}></ion-icon>
+        </a>
     }
 
     return <div className='skill'>
