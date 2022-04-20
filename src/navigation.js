@@ -9,9 +9,7 @@ function List(props) {
     }
 
     return <li>
-        <a href="index.html" onClick={jump}>
-            {props.name}
-        </a>
+        <button onClick={jump}>{props.name}</button>
     </li>
 }
 

@@ -14,12 +14,8 @@ function Textarea(props) {
     </div>
 }
 
-function SendEmail() {
-    const onClick = () => {
-        sendEmail.send();
-    }
-
-    return <a className="btn btn-full" href="index.html" onClick={onClick}>Send</a>;
+const onClick = () => {
+    sendEmail();
 }
 
 export default function Contact() {
@@ -41,7 +37,7 @@ export default function Contact() {
                     <Input id='email' name='email' placeholder='Email' className='far fa-paper-plane' />
                     <Input id='subject' name='subject' placeholder='Subject' className='fas fa-align-right' />
                     <Textarea id='body' name='body' placeholder='Message' className='far fa-envelope-open' />
-                    <SendEmail />
+                    <button className="btn btn-full" onClick={onClick}>Send</button>
                 </form>
             </div>
         </div>

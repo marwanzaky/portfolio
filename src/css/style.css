@@ -8,7 +8,8 @@
 
 body,
 input,
-textarea {
+textarea,
+button {
   font-size: 15px;
   font-family: 'Poppins', sans-serif;
 }
@@ -83,9 +84,7 @@ textarea {
 }
 
 /*------- BUTTONS -------*/
-.btn:link,
-.btn:visited,
-input[type=submit] {
+.btn {
   display: inline-block;
   text-decoration: none;
   font-weight: var(--font-light);
@@ -95,37 +94,27 @@ input[type=submit] {
   transition: background-color var(--transition), border var(--transition), color var(--transition);
 }
 
-.btn-full:link,
-.btn-full:visited,
-input[type=submit] {
+.btn-full {
   background-color: var(--color-red);
   border: var(--line-width) solid var(--color-red);
   color: #fff;
   margin-right: 15px;
 }
 
-.btn-ghost:link,
-.btn-ghost:visited {
+.btn-ghost {
   border: var(--line-width) solid var(--color-red);
   color: var(--color-red);
 }
 
-.btn:hover,
-.btn:active,
-input[type=submit]:hover,
-input[type=submit]:active {
+.btn:hover {
   background-color: var(--color-red-dark);
 }
 
-.btn-full:hover,
-.btn-full:active,
-input[type=submit]:hover,
-input[type=submit]:active {
+.btn-full:hover {
   border: var(--line-width) solid var(--color-red-dark);
 }
 
-.btn-ghost:hover,
-.btn-ghost:active {
+.btn-ghost:hover {
   border: var(--line-width) solid var(--color-red-dark);
   color: #fff;
 }
@@ -198,6 +187,16 @@ a:visited {
   transition: border-bottom var(--transition), color var(--transition);
 }
 
+button {
+  border: none;
+  background-color: transparent;
+  color: var(--color-primary);
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: border-bottom var(--transition), color var(--transition);
+  transition: border-bottom var(--transition), color var(--transition);
+}
+
 /*------- LOGO -------*/
 .logo:link,
 .logo:visited {
@@ -217,8 +216,7 @@ a:visited {
   margin-left: 40px;
 }
 
-.main-nav li a:link,
-.main-nav li a:visited {
+.main-nav li button {
   color: var(--color-primary);
   font-weight: var(--font-light);
   padding: 8px 0px;
@@ -226,8 +224,7 @@ a:visited {
   border-bottom: 2px solid transparent;
 }
 
-.main-nav li a:hover,
-.main-nav li a:active {
+.main-nav li button:hover {
   border-bottom: 2px solid var(--color-red);
 }
 
