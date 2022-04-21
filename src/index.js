@@ -1,4 +1,3 @@
-import ReactDOM from "react-dom";
 import * as ReactDOMClient from 'react-dom/client';
 import Header from "./sections/Header";
 import About from "./sections/About";
