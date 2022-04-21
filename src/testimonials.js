@@ -1,4 +1,3 @@
-
 export default function testimonials() {
     const wrapper = document.querySelector('.testimonials-wrapper');
     const indicators = [...document.querySelectorAll('.indicators button')];

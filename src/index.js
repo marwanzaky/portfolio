@@ -1,34 +1,33 @@
-import React from 'react';
+import ReactDOM from "react-dom";
 import * as ReactDOMClient from 'react-dom/client';
+import Header from "./sections/Header";
+import About from "./sections/About";
+import Portfolio from "./sections/Portfolio";
+import Skills from "./sections/Skills";
+import Stats from "./sections/Stats";
+import Timelines from "./sections/Timelines";
+import Testimonials from "./sections/Testimonials";
+import Contact from "./sections/Contact";
+import Footer from "./sections/Footer";
 
-import Navigation from './navigation'
-import TestimonialsWrapper from './testimonialsWrapper';
-import ProgressBars from './progressBars';
-import TimelineBox from './timelineBox';
-import Works from './works';
-import Skills from './skills'
-import Contact from './contact';
-import Footer from './footer';
-import Testimonials from './testimonials';
-
+import testimonials from './testimonials';
 import './css/style.css';
 
-var navigation = ReactDOMClient.createRoot(document.querySelector('#navigation'));
-var skillsBox = ReactDOMClient.createRoot(document.querySelector('.skills-box'));
-var latestWorkBox = ReactDOMClient.createRoot(document.querySelector('.latest-work-box'));
-var timelineBox = ReactDOMClient.createRoot(document.querySelector('.timeline-box'));
-var statsBox = ReactDOMClient.createRoot(document.querySelector('.stats-box'));
-var testimonialsBox = ReactDOMClient.createRoot(document.querySelector('.testimonials-box'));
-var contact = ReactDOMClient.createRoot(document.querySelector('#contact'));
-var footer = ReactDOMClient.createRoot(document.querySelector('#footer'));
+export default function App() {
+    return <>
+        <Header />
+        <About />
+        <Portfolio />
+        <Skills />
+        <Stats />
+        <Timelines />
+        <Testimonials />
+        <Contact />
+        <Footer />
+    </>
+}
 
-navigation.render(<Navigation />);
-skillsBox.render(<Skills />);
-latestWorkBox.render(<Works />);
-timelineBox.render(<TimelineBox />);
-statsBox.render(<ProgressBars />);
-testimonialsBox.render(<TestimonialsWrapper />);
-contact.render(<Contact />);
-footer.render(<Footer />);
+const root = ReactDOMClient.createRoot(document.getElementById('root'));
+root.render(<App />);
 
-Testimonials();
+testimonials();

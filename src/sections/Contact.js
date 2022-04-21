@@ -1,4 +1,4 @@
-import sendEmail from './sendEmail';
+import sendEmail from '../sendEmail';
 
 function Input(props) {
     return <div className="contact-me-box-feild">
@@ -18,7 +18,7 @@ const onClick = () => {
     sendEmail();
 }
 
-export default function Contact() {
+function Contact() {
     return <section className="section-contact-me">
         <div className="row contact-me-box">
             <div className="contact-me-box-child">
@@ -43,3 +43,5 @@ export default function Contact() {
         </div>
     </section>
 }
+
+export default Contact;

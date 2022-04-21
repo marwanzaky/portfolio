@@ -13,7 +13,7 @@ function List(props) {
     </li>
 }
 
-export default function Navigation() {
+function Navigation() {
     return <nav>
         <div className="row main-nav-box">
             <a className="logo" href="index.html">mz</a>
@@ -27,3 +27,5 @@ export default function Navigation() {
         </div>
     </nav>
 }
+
+export default Navigation;

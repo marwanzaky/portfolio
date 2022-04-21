@@ -1,4 +1,4 @@
-import freelancerSVG from './svg/freelancer-icon.svg';
+import freelancerSVG from '../svg/freelancer-icon.svg';
 
 function List(props) {
     return <li>
@@ -17,7 +17,7 @@ function ListImg(props) {
     </li>
 }
 
-export default function Footer() {
+function Footer() {
     return <footer>
         <div className="row footer-box">
             <div> <p>Copyright &copy; 2021 Marwan Zaky. All rights reserved.</p> </div>
@@ -35,3 +35,5 @@ export default function Footer() {
         </div>
     </footer>
 }
+
+export default Footer;
