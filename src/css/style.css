@@ -168,12 +168,6 @@ h4::before {
   margin-right: 15px;
 }
 
-h5 {
-  font-size: 120%;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
 /*------- LINKS -------*/
 a:link,
 a:visited {
@@ -342,32 +336,21 @@ header {
 }
 
 .skills-box p {
-  font-weight: var(--font-light);
   text-align: center;
 }
 
-.skill div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.skill {
+.skills-box .skill {
   padding: 0 50px;
-  border-radius: var(--border-radius);
-  -webkit-transition: background-color var(--transition), -webkit-box-shadow var(--transition);
-  transition: background-color var(--transition), -webkit-box-shadow var(--transition);
-  transition: background-color var(--transition), box-shadow var(--transition);
-  transition: background-color var(--transition), box-shadow var(--transition), -webkit-box-shadow var(--transition);
 }
 
-.skill-icon {
+.skills-box .skills-title {
+  font-size: 120%;
+  text-align: center;
+  font-weight: var(--font-bold);
+  margin-bottom: 30px;
+}
+
+.skills-box .skill-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -380,16 +363,16 @@ header {
   margin-bottom: 50px;
 }
 
-.skill-icon:link,
-.skill-icon:visited {
+.skills-box .skill-icon:link,
+.skills-box .skill-icon:visited {
   font-size: 300%;
   color: var(--color-red);
   -webkit-transition: color var(--transition);
   transition: color var(--transition);
 }
 
-.skill-icon:hover,
-.skill-icon:active {
+.skills-box .skill-icon:hover,
+.skills-box .skill-icon:active {
   color: var(--color-red-dark);
 }
 

@@ -9,13 +9,13 @@ function Skill(props) {
 
     function URL() {
         return <a href={props.href} className={props.class} target="blank">
-            <ion-icon name={props.name}></ion-icon>
+            {/* <ion-icon name={props.name}></ion-icon> */}
         </a>
     }
 
     return <div className='skill'>
         <div>{props.isIcon ? <IconURL /> : <URL />}</div>
-        <h5>{props.title}</h5>
+        <div className='skills-title'>{props.title}</div>
         <p>{props.description}</p>
     </div >
 }
