@@ -4,9 +4,6 @@ export default function testimonials() {
 
     let currentTestimonial = 0;
 
-    console.log("wrapper", wrapper);
-    console.log("indicators", indicators);
-
     indicators.forEach((indicator, i) => {
         indicator.addEventListener('click', () => {
             indicators[currentTestimonial].classList.remove('active');

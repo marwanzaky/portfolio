@@ -1,5 +1,7 @@
 import * as ReactDOMClient from 'react-dom/client';
 import Header from "./sections/Header";
+import $ from 'jquery';
+
 import About from "./sections/About";
 import Portfolio from "./sections/Portfolio";
 import Skills from "./sections/Skills";
@@ -31,4 +33,6 @@ export default function App() {
 const root = ReactDOMClient.createRoot(document.getElementById('root'));
 root.render(<App />);
 
-setTimeout(testimonials, 1000);
+$('.root').ready(function () {
+    testimonials();
+});
