@@ -7,7 +7,7 @@ export default function testimonials() {
     indicators.forEach((indicator, i) => {
         indicator.addEventListener('click', () => {
             indicators[currentTestimonial].classList.remove('active');
-            wrapper.style.marginLeft = `${-100 * i}%`;
+            wrapper.style.marginLeft = `${-102.5 * i}%`;
             indicator.classList.add('active');
             currentTestimonial = i;
 

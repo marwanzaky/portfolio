@@ -395,6 +395,10 @@ header {
           align-items: center;
 }
 
+.stats-box .prgrs-bars .prgrs-bar .prgrs-container p {
+  width: 24px;
+}
+
 .stats-box .prgrs-bars .prgrs-bar .prgrs-container .prgrs-text {
   font-weight: var(--font-regular);
   color: var(--color-grey);
@@ -480,7 +484,17 @@ header {
 }
 
 .testimonials-wrapper {
-  width: 200%;
+  width: 205%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-transition: margin 1s;
   transition: margin 1s;
 }
@@ -488,6 +502,11 @@ header {
 .testimonial i {
   font-size: 120%;
   margin-bottom: 15px;
+}
+
+.testimonial {
+  width: 33.33%;
+  padding-right: 25px;
 }
 
 .testimonial blockquote {

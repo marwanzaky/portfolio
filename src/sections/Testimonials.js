@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Testimonial(props) {
-    return <div className='col-sm-2 testimonial'>
+    return <div className='testimonial'>
         <i className='fas fa-quote-left'></i>
         <blockquote>
             {props.blockquote}
@@ -18,7 +18,7 @@ function Testimonials() {
         </div>
 
         <div className="container testimonials-box">
-            <div className='row testimonials-wrapper' >
+            <div className='testimonials-wrapper' >
                 <Testimonial
                     blockquote='Marwan did very well at his work and was very Cooperative with us.
                     His work is very clean, of high quality and on time.I highly recommend him.'

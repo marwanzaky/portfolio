@@ -14,7 +14,7 @@ function ProgressBar(props) {
         top: '0',
         left: '0',
         height: '100%',
-        width: '60%'
+        width: '0%'
     }
 
     prgrsSpanStyle.width = props.width;
