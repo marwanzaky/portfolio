@@ -1,15 +1,13 @@
 import React from 'react';
-import $ from 'jquery';
+import Scroll from '../scroll';
 
 function List(props) {
-    const jump = () => {
-        $([document.documentElement, document.body]).animate({
-            scrollTop: $(props.className).offset().top
-        }, 1000);
+    const scroll = () => {
+        Scroll(props.className);
     }
 
     return <li>
-        <button onClick={jump}>{props.name}</button>
+        <button onClick={scroll}>{props.name}</button>
     </li>
 }
 

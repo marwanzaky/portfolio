@@ -1,3 +1,9 @@
+import sendEmail from '../sendEmail';
+
+const send = () => {
+    sendEmail();
+}
+
 function About() {
     return < section className="section-what-i-do" >
         <div className="container">
@@ -8,7 +14,7 @@ function About() {
             <span>Think. Make. <br />
                 Solve.</span>
 
-            <button className="btn btn-full">Email me</button>
+            <button className="btn-base btn-full" onClick={send}>Email me</button>
         </div>
     </section >
 }

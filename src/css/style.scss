@@ -80,7 +80,7 @@ textarea {
 }
 
 /*------- BUTTONS -------*/
-.btn {
+.btn-base {
   display: inline-block;
   text-decoration: none;
   font-weight: var(--font-light);
@@ -101,7 +101,7 @@ textarea {
   color: var(--color-red);
 }
 
-.btn:hover {
+.btn-base:hover {
   background-color: var(--color-red-dark);
 }
 

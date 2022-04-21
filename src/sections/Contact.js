@@ -14,7 +14,7 @@ function Textarea(props) {
     </div>
 }
 
-const onClick = () => {
+const send = () => {
     sendEmail();
 }
 
@@ -37,7 +37,7 @@ function Contact() {
                     <Input id='email' name='email' placeholder='Email' className='far fa-paper-plane' />
                     <Input id='subject' name='subject' placeholder='Subject' className='fas fa-align-right' />
                     <Textarea id='body' name='body' placeholder='Message' className='far fa-envelope-open' />
-                    <button className="btn btn-full" onClick={onClick}>Send</button>
+                    <button className="btn-base btn-full" onClick={send}>Send</button>
                 </form>
             </div>
         </div>
