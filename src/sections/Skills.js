@@ -22,12 +22,12 @@ function Skill(props) {
 
 function Skills() {
     return <section className="section-skills">
-        <div className="row">
+        <div className="container">
             <h4>My Skills</h4>
             <h2>Why Me?</h2>
         </div>
 
-        <div className="row skills-box">
+        <div className="container skills-box">
             <Skill isIcon={true} class='skill-icon' href='https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/' name='code-slash-outline' title='C#' description='
             An advanced C# programmer making flexible, expandable and self-explanatory code, and custom tools for productivity.' />
 

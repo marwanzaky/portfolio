@@ -19,7 +19,7 @@ function ListImg(props) {
 
 function Footer() {
     return <footer>
-        <div className="row footer-box">
+        <div className="container footer-box">
             <div> <p>Copyright &copy; 2021 Marwan Zaky. All rights reserved.</p> </div>
 
             <div>

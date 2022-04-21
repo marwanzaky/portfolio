@@ -10,6 +10,8 @@ import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
 
 import testimonials from './testimonials';
+
+import 'bootstrap/dist/css/bootstrap.css';
 import './css/style.css';
 
 export default function App() {
@@ -29,4 +31,4 @@ export default function App() {
 const root = ReactDOMClient.createRoot(document.getElementById('root'));
 root.render(<App />);
 
-testimonials();
+setTimeout(testimonials, 1000);

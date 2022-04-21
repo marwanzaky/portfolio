@@ -24,12 +24,12 @@ function Work(props) {
 
 function Portfolio() {
     return <section className="section-latest-work">
-        <div className="row">
+        <div className="container">
             <h4>Latest Works</h4>
             <h2>Learn More About My Work.</h2>
         </div>
 
-        <div className="row latest-work-box">
+        <div className="container latest-work-box">
             <Work url='https://www.artstation.com/artwork/o2bDYk' src={runRich} text='Run Food - Unity' />
             <Work url='https://play.google.com/store/apps/details?id=com.aiwabox.blooming.kingdom' src={bloomingKingdom} text='Blooming Kingdom - Unity' style={style} />
             <Work url='https://www.artstation.com/artwork/d08yBQ' src={blindLove} text='Blind Love - Unity' />

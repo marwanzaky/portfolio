@@ -1,10 +1,10 @@
 import Navigation from "./Navigation";
 
 function Header() {
-    return <header>
+    return <header >
         <Navigation />
 
-        <div className="header-box">
+        <div className="container header-box">
             <h1 className="header-text">Hy! I am<br />Marwan Zaky</h1>
             <p className="header-parag">
                 Passion and Hobbyist game developer with +7 years of experience making<br />iOS/Android highly

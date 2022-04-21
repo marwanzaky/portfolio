@@ -15,7 +15,7 @@ function List(props) {
 
 function Navigation() {
     return <nav>
-        <div className="row main-nav-box">
+        <div className="container main-nav-box">
             <a className="logo" href="index.html">mz</a>
 
             <ul className="main-nav">

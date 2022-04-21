@@ -38,11 +38,6 @@ button {
 }
 
 /*------- REUSEABLE COMPONENTS -------*/
-.row {
-  width: 1140px;
-  margin: 0 auto;
-}
-
 section,
 footer {
   padding: 50px;
@@ -371,75 +366,21 @@ header {
 }
 
 .stats-box {
-  .progress-bars {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
-
-    .progress-bar {
-      .progress-title {
+  .prgrs-bars {
+    .prgrs-bar {
+      .prgrs-title {
         font-weight: var(--font-bold);
         margin: 0;
       }
 
-      .progress-container {
+      .prgrs-container {
         display: flex;
         align-items: center;
 
-        .progress-text {
+        .prgrs-text {
           font-weight: var(--font-regular);
           color: var(--color-grey);
           margin: 0;
-        }
-
-        .progress {
-          background-color: var(--color-grey);
-          margin-left: 1rem;
-          position: relative;
-
-          width: 100%;
-          height: 8px;
-
-          span {
-            background-color: var(--color-red);
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 60%;
-          }
-
-          .unity {
-            width: 100%;
-          }
-
-          .c-sharp {
-            width: 100%;
-          }
-
-          .firebase {
-            width: 90%;
-          }
-
-          .html {
-            width: 80%;
-          }
-
-          .css {
-            width: 80%;
-          }
-
-          .js {
-            width: 80%;
-          }
-
-          .python {
-            width: 65%;
-          }
-
-          .blender {
-            width: 60%;
-          }
         }
       }
     }
@@ -517,11 +458,11 @@ header {
 }
 
 .testimonials-wrapper {
-  width: 199.98%;
+  width: 200%;
 
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: space-evenly;
 
   transition: margin 1s;
 }
@@ -532,8 +473,8 @@ header {
 }
 
 .testimonial {
-  width: 33.33%;
-  padding-right: 25px;
+  // width: 33.33%;
+  // padding-right: 25px;
 }
 
 .testimonial blockquote {

@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Testimonial(props) {
-    return <div className='testimonial'>
+    return <div className='col-sm-2 testimonial'>
         <i className='fas fa-quote-left'></i>
         <blockquote>
             {props.blockquote}
@@ -12,13 +12,13 @@ function Testimonial(props) {
 
 function Testimonials() {
     return <section className="section-testimonials">
-        <div className="row">
+        <div className="container">
             <h4>Testimonials</h4>
             <h2>What Customers Think?</h2>
         </div>
 
-        <div className="row testimonials-box">
-            <div className='testimonials-wrapper' >
+        <div className="container testimonials-box">
+            <div className='row testimonials-wrapper' >
                 <Testimonial
                     blockquote='Marwan did very well at his work and was very Cooperative with us.
                     His work is very clean, of high quality and on time.I highly recommend him.'
@@ -51,12 +51,12 @@ function Testimonials() {
                     games and knows how to implement any mechanic you need. I will repeat for sure!'
                     cite='Alcoverrr 🇪🇸' />
 
-            </div >
+            </div>
         </div>
 
-        <div className="row indicators">
-            <button className="active"></button>
-            <button></button>
+        <div className="container indicators">
+            <button className="indicators-btn active"></button>
+            <button className="indicators-btn"></button>
         </div>
     </section>
 }

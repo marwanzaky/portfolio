@@ -32,11 +32,6 @@ button {
 }
 
 /*------- REUSEABLE COMPONENTS -------*/
-.row {
-  width: 1140px;
-  margin: 0 auto;
-}
-
 section,
 footer {
   padding: 50px;
@@ -403,20 +398,12 @@ header {
   background-color: var(--color-primary-dark);
 }
 
-.stats-box .progress-bars {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
-}
-
-.stats-box .progress-bars .progress-bar .progress-title {
+.stats-box .prgrs-bars .prgrs-bar .prgrs-title {
   font-weight: var(--font-bold);
   margin: 0;
 }
 
-.stats-box .progress-bars .progress-bar .progress-container {
+.stats-box .prgrs-bars .prgrs-bar .prgrs-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -425,59 +412,10 @@ header {
           align-items: center;
 }
 
-.stats-box .progress-bars .progress-bar .progress-container .progress-text {
+.stats-box .prgrs-bars .prgrs-bar .prgrs-container .prgrs-text {
   font-weight: var(--font-regular);
   color: var(--color-grey);
   margin: 0;
-}
-
-.stats-box .progress-bars .progress-bar .progress-container .progress {
-  background-color: var(--color-grey);
-  margin-left: 1rem;
-  position: relative;
-  width: 100%;
-  height: 8px;
-}
-
-.stats-box .progress-bars .progress-bar .progress-container .progress span {
-  background-color: var(--color-red);
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 60%;
-}
-
-.stats-box .progress-bars .progress-bar .progress-container .progress .unity {
-  width: 100%;
-}
-
-.stats-box .progress-bars .progress-bar .progress-container .progress .c-sharp {
-  width: 100%;
-}
-
-.stats-box .progress-bars .progress-bar .progress-container .progress .firebase {
-  width: 90%;
-}
-
-.stats-box .progress-bars .progress-bar .progress-container .progress .html {
-  width: 80%;
-}
-
-.stats-box .progress-bars .progress-bar .progress-container .progress .css {
-  width: 80%;
-}
-
-.stats-box .progress-bars .progress-bar .progress-container .progress .js {
-  width: 80%;
-}
-
-.stats-box .progress-bars .progress-bar .progress-container .progress .python {
-  width: 65%;
-}
-
-.stats-box .progress-bars .progress-bar .progress-container .progress .blender {
-  width: 60%;
 }
 
 /*------- TIMELINE -------*/
@@ -559,17 +497,7 @@ header {
 }
 
 .testimonials-wrapper {
-  width: 199.98%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  width: 200%;
   -webkit-transition: margin 1s;
   transition: margin 1s;
 }
@@ -577,11 +505,6 @@ header {
 .testimonial i {
   font-size: 120%;
   margin-bottom: 15px;
-}
-
-.testimonial {
-  width: 33.33%;
-  padding-right: 25px;
 }
 
 .testimonial blockquote {

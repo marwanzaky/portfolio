@@ -13,11 +13,11 @@ function Timeline(props) {
 
 function Timelines() {
     return <section className="section-timeline">
-        <div className="row">
+        <div className="container">
             <h4>Timeline</h4>
         </div>
 
-        <div className="row timeline-box">
+        <div className="container timeline-box">
             <Timeline duration='May 2021 - Present' title='Unity Game Developer' company='Upwork' description='
             - Translate requirements into complicated but clean and efficient code <br>
             - Develop schedules and determine milestones <br>

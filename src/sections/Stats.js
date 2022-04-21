@@ -1,12 +1,30 @@
 import React from 'react';
 
+const prgrsStyle = {
+    marginLeft: '18px',
+    position: 'relative',
+    width: '100%',
+    height: '8px'
+}
+
 function ProgressBar(props) {
-    return <div className='progress-bar'>
-        <p className='progress-title'> {props.title}</p>
-        <div className='progress-container'>
-            <p className='progress-text'>{props.text}</p>
-            <div className='progress'>
-                <span className={props.class}></span>
+
+    const prgrsSpanStyle = {
+        position: 'absolute',
+        top: '0',
+        left: '0',
+        height: '100%',
+        width: '60%'
+    }
+
+    prgrsSpanStyle.width = props.width;
+
+    return <div className='col-sm-6 p-2 prgrs-bar '>
+        <p className='prgrs-title'> {props.title}</p>
+        <div className='prgrs-container '>
+            <p className='prgrs-text'>{props.width}</p>
+            <div className='progress' style={prgrsStyle}>
+                <span className='progress-bar bg-danger progress-bar-striped progress-bar-animated' style={prgrsSpanStyle}></span>
             </div>
         </div>
     </div>
@@ -14,20 +32,20 @@ function ProgressBar(props) {
 
 function Stats() {
     return <section className="section-stats">
-        <div className="row">
+        <div className="container">
             <h4>My Stats</h4>
         </div>
 
-        <div className="row stats-box">
-            <div className="progress-bars">
-                <ProgressBar title='Unity' text='100%' class='unity' />
-                <ProgressBar title='C#' text='100%' class='c-sharp' />
-                <ProgressBar title='Firebase' text='90%' class='firebase' />
-                <ProgressBar title='Blender' text='60%' class='blender' />
-                <ProgressBar title='JavaScript' text='80%' class='js' />
-                <ProgressBar title='HTML5' text='80%' class='html' />
-                <ProgressBar title='CSS' text='80%' class='css' />
-                <ProgressBar title='Python' text='65%' class='python' />
+        <div className="container stats-box">
+            <div className="row prgrs-bars">
+                <ProgressBar title='Unity' width='100%' />
+                <ProgressBar title='C#' width='100%' />
+                <ProgressBar title='Firebase' width='90%' />
+                <ProgressBar title='Blender' width='60%' />
+                <ProgressBar title='JavaScript' width='80%' />
+                <ProgressBar title='HTML5' width='80%' />
+                <ProgressBar title='CSS' width='80%' />
+                <ProgressBar title='Python' width='65%' />
             </div>
         </div>
     </section>

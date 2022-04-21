@@ -20,7 +20,7 @@ const onClick = () => {
 
 function Contact() {
     return <section className="section-contact-me">
-        <div className="row contact-me-box">
+        <div className="container contact-me-box">
             <div className="contact-me-box-child">
                 <h4>Contact us</h4>
                 <h2>Let’s Work Together.</h2>

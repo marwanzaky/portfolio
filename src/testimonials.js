@@ -4,12 +4,17 @@ export default function testimonials() {
 
     let currentTestimonial = 0;
 
+    console.log("wrapper", wrapper);
+    console.log("indicators", indicators);
+
     indicators.forEach((indicator, i) => {
         indicator.addEventListener('click', () => {
             indicators[currentTestimonial].classList.remove('active');
-            wrapper.style.marginLeft = `${-99.99 * i}%`;
+            wrapper.style.marginLeft = `${-100 * i}%`;
             indicator.classList.add('active');
             currentTestimonial = i;
+
+            console.log("update!");
         });
     });
 }
