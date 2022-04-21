@@ -328,13 +328,6 @@ header {
 }
 
 /*------- SKILLS -------*/
-.skills-box {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto auto auto;
-      grid-template-columns: auto auto auto;
-}
-
 .skills-box p {
   text-align: center;
 }
