@@ -31,6 +31,17 @@ button {
   --line-width: 1px;
 }
 
+.light-mode {
+  --color-red: #e74c3c;
+  --color-red-dark: #c0392b;
+  --color-primary: #141c24;
+  --color-primary-dark: #1a242f;
+  --color-grey: #aaa;
+  --color-black: #ffffff;
+  --color-black-light: #f6f8f8;
+  --color-shadow: rgba(255, 255, 255, 0.05);
+}
+
 /*------- REUSEABLE COMPONENTS -------*/
 section,
 footer {
@@ -116,12 +127,21 @@ textarea {
 
 /*------- PARAPHRAPHS -------*/
 p {
+  color: var(--color-black);
   margin-bottom: 50px;
   font-weight: var(--font-light);
   line-height: 150%;
 }
 
 /*------- HEADINGS -------*/
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--color-black);
+}
+
 h1,
 h4 {
   font-weight: var(--font-light);
@@ -229,6 +249,18 @@ button {
   border-bottom: 2px solid var(--color-red);
 }
 
+.theme-btn {
+  width: 32px;
+  height: 32px;
+  background-color: var(--color-black);
+  border-radius: 50%;
+  float: right;
+}
+
+.theme-btn FontAwesomeIcon {
+  color: var(--color-primary);
+}
+
 /*------- HEADER -------*/
 header {
   padding: 50px;
@@ -254,7 +286,12 @@ header {
 }
 
 /*------- WHAT I DO -------*/
+.section-what-i-do {
+  background-color: var(--color-primary);
+}
+
 .section-what-i-do span {
+  color: var(--color-black);
   display: block;
   margin-bottom: 50px;
   padding-top: 50px;
@@ -310,7 +347,7 @@ header {
   right: 50%;
   -webkit-transform: translate(50%, -50%);
           transform: translate(50%, -50%);
-  color: var(--color-primary);
+  color: white;
   font-size: 120%;
   font-weight: var(--font-bold);
   text-align: center;
@@ -326,6 +363,10 @@ header {
 }
 
 /*------- SKILLS -------*/
+.section-skills {
+  background-color: var(--color-primary);
+}
+
 .skills-box p {
   text-align: center;
 }
@@ -335,6 +376,7 @@ header {
 }
 
 .skills-box .skills-title {
+  color: var(--color-black);
   font-size: 120%;
   text-align: center;
   font-weight: var(--font-bold);
@@ -474,6 +516,10 @@ header {
   margin-bottom: 15px;
 }
 
+.testimonials-box blockquote {
+  color: var(--color-black);
+}
+
 .testimonials-wrapper {
   width: 205%;
   display: -webkit-box;
@@ -493,6 +539,7 @@ header {
 .testimonial i {
   font-size: 120%;
   margin-bottom: 15px;
+  color: var(--color-black);
 }
 
 .testimonial {

@@ -12,6 +12,7 @@ import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
 
 import testimonials from './testimonials';
+import lightMode from './lightMode';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './css/style.css';
@@ -35,4 +36,5 @@ root.render(<App />);
 
 $('.root').ready(function () {
     testimonials();
+    lightMode();
 });

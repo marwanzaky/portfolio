@@ -5,7 +5,7 @@ const send = () => {
 }
 
 function About() {
-    return < section className="section-what-i-do" >
+    return <section className="section-what-i-do" >
         <div className="container">
             <h4>What I Do</h4>
             <h2>I enjoy creating delightful, <br />

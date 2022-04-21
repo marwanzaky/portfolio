@@ -24,7 +24,7 @@ function Footer() {
 
             <div>
                 <ul class="social-media">
-                    <List url='mailto: contact@marwanzaky.com' name='send-outline' />
+                    <List url='mailto: contact@marwanzaky.com' name='send' />
                     <ListImg url='https://www.freelancer.com/u/marwanezzaky' src={freelancerSVG} />
                     <List url='https://www.linkedin.com/in/marwan-zaky/' name='logo-linkedin' />
                     <List url='https://twitter.com/marwan_zaky_dev' name='logo-twitter' />

@@ -1,6 +1,9 @@
 import React from 'react';
 import Scroll from '../scroll';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBoltLightning } from '@fortawesome/free-solid-svg-icons'
+
 function List(props) {
     const scroll = () => {
         Scroll(props.className);
@@ -12,8 +15,8 @@ function List(props) {
 }
 
 function Navigation() {
-    return <nav>
-        <div className="container main-nav-box">
+    return <nav className='container'>
+        <div className="main-nav-box">
             <a className="logo" href="index.html">mz</a>
 
             <ul className="main-nav">
@@ -23,6 +26,10 @@ function Navigation() {
                 <List name='Contact' className='.section-contact-me' />
             </ul>
         </div>
+
+        <button className='theme-btn'>
+            <FontAwesomeIcon icon={faBoltLightning} />
+        </button>
     </nav>
 }
 
