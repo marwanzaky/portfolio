@@ -23,7 +23,7 @@ function Footer() {
             <div> <p>Copyright &copy; 2021 Marwan Zaky. All rights reserved.</p> </div>
 
             <div>
-                <ul class="social-media">
+                <ul className="social-media">
                     <List url='mailto: contact@marwanzaky.com' name='send' />
                     <ListImg url='https://www.freelancer.com/u/marwanezzaky' src={freelancerSVG} />
                     <List url='https://www.linkedin.com/in/marwan-zaky/' name='logo-linkedin' />

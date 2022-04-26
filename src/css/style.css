@@ -521,7 +521,7 @@ header {
 }
 
 .testimonials-wrapper {
-  width: 205%;
+  width: 200%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -536,15 +536,15 @@ header {
   transition: margin 1s;
 }
 
+.testimonial {
+  width: 33.33%;
+  padding: 0 15px 0 15px;
+}
+
 .testimonial i {
   font-size: 120%;
   margin-bottom: 15px;
   color: var(--color-black);
-}
-
-.testimonial {
-  width: 33.33%;
-  padding-right: 25px;
 }
 
 .testimonial blockquote {
@@ -552,13 +552,13 @@ header {
   font-weight: var(--font-light);
 }
 
-.testimonial cite:before {
-  content: '\2014 \0020';
-}
-
 .testimonial cite {
   display: block;
   margin-top: 20px;
+}
+
+.testimonial cite:before {
+  content: '\2014 \0020';
 }
 
 .indicators {
