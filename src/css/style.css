@@ -506,6 +506,10 @@ header {
   font-weight: var(--font-bold);
 }
 
+.timeline-box .timeline-item .timeline-description {
+  white-space: pre-wrap;
+}
+
 /*------- TESTIMONIALS -------*/
 .section-testimonials {
   background-color: var(--color-primary-dark);

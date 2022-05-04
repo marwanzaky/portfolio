@@ -479,6 +479,11 @@ header {
         font-weight: var(--font-bold);
       }
     }
+
+    .timeline-description {
+      white-space: pre-wrap;
+      // font-size: 200%;
+    }
   }
 }
 
