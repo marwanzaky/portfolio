@@ -509,6 +509,7 @@ header {
 .timeline-box .timeline-item .timeline-description {
   white-space: pre-wrap;
   color: var(--color-black);
+  font-weight: var(--font-light);
 }
 
 /*------- TESTIMONIALS -------*/
