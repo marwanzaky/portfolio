@@ -5,7 +5,6 @@ function NewlineText(props) {
     return <div className='timeline-description'>{text}</div>;
 }
 
-
 function Timeline(props) {
     return <div className='timeline-item'>
         <div className='timeline-icon'>

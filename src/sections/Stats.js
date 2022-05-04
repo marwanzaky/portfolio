@@ -42,10 +42,13 @@ function Stats() {
                 <ProgressBar title='C#' width='100%' />
                 <ProgressBar title='Firebase' width='90%' />
                 <ProgressBar title='Blender' width='60%' />
-                <ProgressBar title='JavaScript' width='80%' />
+                <ProgressBar title='JavaScript' width='85%' />
+                <ProgressBar title='React.js' width='75%' />
+                <ProgressBar title='Node.js' width='70%' />
+                <ProgressBar title='Python' width='65%' />
                 <ProgressBar title='HTML5' width='80%' />
                 <ProgressBar title='CSS' width='80%' />
-                <ProgressBar title='Python' width='65%' />
+                <ProgressBar title='Bootstrap' width='80%' />
             </div>
         </div>
     </section>
