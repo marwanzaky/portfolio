@@ -1,7 +1,7 @@
-import sendEmail from '../sendEmail';
+import Scroll from '../scroll';
 
-const send = () => {
-    sendEmail();
+const scroll = () => {
+    Scroll('.section-contact-me');
 }
 
 function About() {
@@ -14,7 +14,7 @@ function About() {
             <span>Think. Make. <br />
                 Solve.</span>
 
-            <button className="btn-base btn-full" onClick={send}>Email me</button>
+            <button className="btn-base btn-full" onClick={scroll}>Email me</button>
         </div>
     </section >
 }

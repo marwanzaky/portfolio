@@ -1,4 +1,4 @@
-import sendEmail from '../sendEmail';
+import Button from "bootstrap/js/src/button";
 
 function Input(props) {
     return <div className="contact-me-box-feild">
@@ -12,10 +12,6 @@ function Textarea(props) {
         <textarea id={props.id} name={props.name} placeholder={props.placeholder}></textarea>
         <div className="contact-me-box-feild-icon"><i className={props.className}></i></div>
     </div>
-}
-
-const send = () => {
-    sendEmail();
 }
 
 function Contact() {
@@ -32,12 +28,14 @@ function Contact() {
             </div>
 
             <div className="contact-me-box-child contact-me-container">
-                <form action="https://mailto:contact@marwanzaky.com">
+                <form action="https://formsubmit.co/contact@marwanzaky.com" method="POST">
                     <Input id='fullname' name='name' placeholder='Name' className='far fa-user' />
                     <Input id='email' name='email' placeholder='Email' className='far fa-paper-plane' />
                     <Input id='subject' name='subject' placeholder='Subject' className='fas fa-align-right' />
                     <Textarea id='body' name='body' placeholder='Message' className='far fa-envelope-open' />
-                    <button className="btn-base btn-full" onClick={send}>Send</button>
+                    <input type="hidden" name="_captcha" value="false"/>
+                    {/*<input type="hidden" name="_next" value="https://www.marwanzaky.com/thankyou"/>*/}
+                    <button className="btn-base btn-full" type="submit">Send</button>
                 </form>
             </div>
         </div>
