@@ -1,5 +1,3 @@
-import Button from "bootstrap/js/src/button";
-
 function Input(props) {
     return <div className="contact-me-box-feild">
         <input type="text" id={props.id} name={props.name} placeholder={props.placeholder} />
