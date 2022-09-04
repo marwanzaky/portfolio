@@ -1,0 +1,236 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+/*------- BASIC SETUP -------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: 16px;
+}
+
+:root {
+    --font-family: 'Poppins', serif;
+
+    --color-pattern-1: #F4EEFF;
+    --color-pattern-2: #DCD6F7;
+    --color-pattern-3: #A6B1E1;
+    --color-pattern-4: #424874;
+
+    --font-light: 300;
+    --font-regular: 400;
+    --font-bold: 700;
+
+    --border-radius: 0;
+    --line-width: 1px;
+
+    --transition-delay: 0.2s;
+}
+
+/*------- REUSEABLE COMPONENTS -------*/
+button {
+    text-transform: capitalize;
+    // font-weight: bold;
+}
+
+header,
+section {
+    padding: 50px 0;
+}
+
+ul {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-pattern-4);
+
+    &:hover {
+        // color: var(--color-pattern-4);
+    }
+}
+
+p {
+    color: var(--color-pattern-4);
+    font-weight: var(--font-regular);
+    line-height: 200%;
+    margin-bottom: 50px;
+}
+
+/*------- HEADINGS -------*/
+h1 {
+    color: var(--color-pattern-4);
+
+    text-transform: uppercase;
+    font-weight: var(--font-regular);
+    font-size: 250%;
+    line-height: 100%;
+
+    // letter-spacing: 1px;
+    // word-spacing: 4px;
+}
+
+h3 {
+    color: var(--color-pattern-4);
+
+    font-weight: var(--font-regular);
+    font-size: 300%;
+    text-transform: capitalize;
+
+    margin-bottom: 30px;
+}
+
+h4 {
+    color: var(--color-pattern-4);
+
+    font-weight: var(--font-bold);
+    font-size: 150%;
+
+    text-transform: capitalize;
+}
+
+/*------- BUTTONS -------*/
+.btn-base {
+    padding: 10px 30px;
+    font-weight: var(--font-regular);
+    border-radius: var(--border-radius);
+
+    &:hover {
+        background-color: var(--color-pattern-4);
+    }
+}
+
+.btn-full {
+    background-color: var(--color-pattern-4);
+    color: var(--color-pattern-1);
+    margin-right: 15px;
+}
+
+.btn-ghost {
+    border: var(--line-width) solid var(--color-pattern-4);
+    color: var(--color-pattern-4);
+
+    &:hover {
+        border: var(--line-width) solid var(--color-pattern-4);
+        color: #fff;
+    }
+}
+
+/*------- MAIN NAVIGATOR -------*/
+nav {
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .nav-logo {
+            font-family: 'Sacramento', cursive;
+            font-size: 500%;
+        }
+
+        .nav-ul li {
+            padding: 0 20px;
+        }
+    }
+}
+
+/*------- HEADER -------*/
+header {
+    height: 100vh;
+    background-color: var(--color-pattern-1);
+
+    .header-container {
+        padding: 100px 0;
+
+        .header-name {
+            margin-bottom: 50px;
+            font-size: 500%;
+            line-height: 100%;
+            letter-spacing: 1px;
+            word-spacing: 4px;
+            text-transform: capitalize;
+            color: var(--color-pattern-4);
+        }
+
+        .header-about {
+            margin-bottom: 50px;
+            color: var(--color-pattern-4);
+        }
+
+        .header-analytics {
+            padding-top: 50px;
+
+            .header-analytic {
+                margin-right: 50px;
+
+                .header-analytic-total {
+                    font-size: 200%;
+                    font-weight: var(--font-bold);
+                    color: var(--color-pattern-4);
+                }
+
+                .header-analytic-type {
+                    display: block;
+                    color: var(--color-pattern-4);
+                }
+            }
+        }
+
+        .header-profile_picture {
+            border-radius: 50%;
+            margin: 0 auto;
+            width: 250px;
+            height: 250px;
+        }
+    }
+}
+
+/*------- SERVICES -------*/
+.services-container {
+    .services-service {
+        box-shadow: 0 0 20px var(--color-pattern-1);
+
+        margin-bottom: 15px;
+        padding: 30px;
+
+        border: solid 2px var(--color-pattern-1);
+        border-radius: 24px;
+
+        .services-service-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 30px;
+
+            .services-service-icon-ionicon {
+                // margin-right: 30px;
+
+                font-size: 200%;
+                color: var(--color-pattern-4);
+
+                width: 64px;
+                height: 64px;
+            }
+        }
+
+        .services-service-projects {
+            color: var(--color-pattern-3);
+        }
+    }
+}
