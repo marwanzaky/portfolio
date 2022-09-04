@@ -1,40 +1,17 @@
-import * as ReactDOMClient from 'react-dom/client';
-import Header from "./sections/Header";
-import $ from 'jquery';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
-import About from "./sections/About";
-import Portfolio from "./sections/Portfolio";
-import Skills from "./sections/Skills";
-import Stats from "./sections/Stats";
-import Timelines from "./sections/Timelines";
-import Testimonials from "./sections/Testimonials";
-import Contact from "./sections/Contact";
-import Footer from "./sections/Footer";
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
 
-import testimonials from './testimonials';
-import lightMode from './lightMode';
-
-import 'bootstrap/dist/css/bootstrap.css';
-import './css/style.css';
-
-export default function App() {
-    return <>
-        <Header />
-        <About />
-        <Portfolio />
-        <Skills />
-        <Stats />
-        <Timelines />
-        <Testimonials />
-        <Contact />
-        <Footer />
-    </>
-}
-
-const root = ReactDOMClient.createRoot(document.getElementById('root'));
-root.render(<App />);
-
-$('.root').ready(function () {
-    testimonials();
-    lightMode();
-});
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
