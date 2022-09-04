@@ -17,7 +17,7 @@ function Service(props) {
 
 function Services() {
     return (
-        <section>
+        <section className='section-services'>
             <div className='xl:container xl:mx-auto'>
                 <div className='flex services-container'>
                     <div className='w-[50%]'>
@@ -27,8 +27,8 @@ function Services() {
                     </div>
 
                     <div className='w-[50%]'>
-                        <h3>Services I offer</h3>
-                        <p className='text-justify'>I will help you with finging a solution and solve your problems, We use process design to create digital products. Besids that also help their business. <br /> <br />We use process design to create digital products. Besids that also help their business.</p>
+                        <h3 className='services-h1'>Services I offer</h3>
+                        <p className='text-justify services-p'>I will help you with finging a solution and solve your problems, We use process design to create digital products. Besids that also help their business. <br /> <br />We use process design to create digital products. Besids that also help their business.</p>
                     </div>
                 </div>
             </div>

@@ -8,6 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: background-color var(--transition-delay), color var(--transition-delay);
 }
 
 body {
@@ -17,10 +18,10 @@ body {
 
 :root {
   --font-family: "Poppins", serif;
-  --color-pattern-1: #F4EEFF;
-  --color-pattern-2: #DCD6F7;
-  --color-pattern-3: #A6B1E1;
-  --color-pattern-4: #424874;
+  --color-white: #EEEEEE;
+  --color-primary: #00ADB5;
+  --color-primary-dark: #00ADB5;
+  --color-black: #222831;
   --font-light: 300;
   --font-regular: 400;
   --font-bold: 700;
@@ -34,9 +35,12 @@ button {
   text-transform: capitalize;
 }
 
-header,
-section {
+header {
   padding: 50px 0;
+}
+
+section {
+  padding: 100px 0;
 }
 
 ul {
@@ -52,10 +56,14 @@ li {
 
 a {
   text-decoration: none;
-  color: var(--color-pattern-4);
+  color: var(--color-black);
 }
+a:hover {
+  color: var(--color-primary-dark);
+}
+
 p {
-  color: var(--color-pattern-4);
+  color: var(--color-black);
   font-weight: var(--font-regular);
   line-height: 200%;
   margin-bottom: 50px;
@@ -63,7 +71,7 @@ p {
 
 /*------- HEADINGS -------*/
 h1 {
-  color: var(--color-pattern-4);
+  color: var(--color-black);
   text-transform: uppercase;
   font-weight: var(--font-regular);
   font-size: 250%;
@@ -71,7 +79,7 @@ h1 {
 }
 
 h3 {
-  color: var(--color-pattern-4);
+  color: var(--color-black);
   font-weight: var(--font-regular);
   font-size: 300%;
   text-transform: capitalize;
@@ -79,7 +87,7 @@ h3 {
 }
 
 h4 {
-  color: var(--color-pattern-4);
+  color: var(--color-black);
   font-weight: var(--font-bold);
   font-size: 150%;
   text-transform: capitalize;
@@ -92,22 +100,22 @@ h4 {
   border-radius: var(--border-radius);
 }
 .btn-base:hover {
-  background-color: var(--color-pattern-4);
+  background-color: var(--color-primary-dark);
 }
 
 .btn-full {
-  background-color: var(--color-pattern-4);
-  color: var(--color-pattern-1);
+  background-color: var(--color-primary);
+  color: var(--color-white);
   margin-right: 15px;
 }
 
 .btn-ghost {
-  border: var(--line-width) solid var(--color-pattern-4);
-  color: var(--color-pattern-4);
+  border: var(--line-width) solid var(--color-primary);
+  color: var(--color-primary);
 }
 .btn-ghost:hover {
-  border: var(--line-width) solid var(--color-pattern-4);
-  color: #fff;
+  border: var(--line-width) solid var(--color-primary-dark);
+  color: var(--color-white);
 }
 
 /*------- MAIN NAVIGATOR -------*/
@@ -127,7 +135,7 @@ nav .nav-container .nav-ul li {
 /*------- HEADER -------*/
 header {
   height: 100vh;
-  background-color: var(--color-pattern-1);
+  background-color: var(--color-white);
 }
 header .header-container {
   padding: 100px 0;
@@ -139,11 +147,11 @@ header .header-container .header-name {
   letter-spacing: 1px;
   word-spacing: 4px;
   text-transform: capitalize;
-  color: var(--color-pattern-4);
+  color: var(--color-black);
 }
 header .header-container .header-about {
   margin-bottom: 50px;
-  color: var(--color-pattern-4);
+  color: var(--color-black);
 }
 header .header-container .header-analytics {
   padding-top: 50px;
@@ -154,34 +162,42 @@ header .header-container .header-analytics .header-analytic {
 header .header-container .header-analytics .header-analytic .header-analytic-total {
   font-size: 200%;
   font-weight: var(--font-bold);
-  color: var(--color-pattern-4);
+  color: var(--color-black);
 }
 header .header-container .header-analytics .header-analytic .header-analytic-type {
   display: block;
-  color: var(--color-pattern-4);
+  color: var(--color-black);
 }
 header .header-container .header-profile_picture {
-  border-radius: 50%;
   margin: 0 auto;
+  padding: 10px;
+  border: solid 2px var(--color-primary);
+  border-radius: 50%;
   width: 250px;
   height: 250px;
 }
 
 /*------- SERVICES -------*/
+.section-services {
+  background-color: #fff;
+}
+
 .services-container .services-service {
-  box-shadow: 0 0 20px var(--color-pattern-1);
   margin-bottom: 15px;
   padding: 30px;
-  border: solid 2px var(--color-pattern-1);
+  border: solid 1px var(--color-white);
   border-radius: 24px;
 }
 .services-container .services-service .services-service-icon {
   margin-right: 30px;
   font-size: 200%;
-  color: var(--color-pattern-4);
+  color: var(--color-primary);
   width: 64px;
   height: 64px;
 }
+.services-container .services-service .services-service-name {
+  color: var(--color-black);
+}
 .services-container .services-service .services-service-projects {
-  color: var(--color-pattern-3);
+  color: var(--color-black);
 }/*# sourceMappingURL=styles.css.map */
