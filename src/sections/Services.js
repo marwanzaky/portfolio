@@ -6,10 +6,7 @@ import { laptopOutline, logoReact, gameControllerOutline } from 'ionicons/icons'
 function Service(props) {
     return (
         <div className='flex w-[500px] services-service'>
-            <div className='services-service-icon'>
-                <IonIcon class='services-service-icon-ionion' src={props.icon} />
-            </div>
-
+            <IonIcon class='services-service-icon' src={props.icon} />
             <div className='flex flex-col'>
                 <h4 className='services-service-name'>{props.name}</h4>
                 <span className='services-service-projects'>{props.projects + ' Projects'}</span>

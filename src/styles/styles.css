@@ -176,12 +176,7 @@ header .header-container .header-profile_picture {
   border-radius: 24px;
 }
 .services-container .services-service .services-service-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-right: 30px;
-}
-.services-container .services-service .services-service-icon .services-service-icon-ionicon {
   font-size: 200%;
   color: var(--color-pattern-4);
   width: 64px;

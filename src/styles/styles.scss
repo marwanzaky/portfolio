@@ -213,20 +213,13 @@ header {
         border-radius: 24px;
 
         .services-service-icon {
-            display: flex;
-            justify-content: center;
-            align-items: center;
             margin-right: 30px;
 
-            .services-service-icon-ionicon {
-                // margin-right: 30px;
+            font-size: 200%;
+            color: var(--color-pattern-4);
 
-                font-size: 200%;
-                color: var(--color-pattern-4);
-
-                width: 64px;
-                height: 64px;
-            }
+            width: 64px;
+            height: 64px;
         }
 
         .services-service-projects {
