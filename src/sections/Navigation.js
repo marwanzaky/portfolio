@@ -2,9 +2,9 @@ import React from 'react';
 import Scroll from '../scroll';
 
 const scroll = section => {
-    const element = document.querySelector(section);
-    const elementY = element.getBoundingClientRect().y;
-    Scroll(elementY);
+    // const element = document.querySelector(section);
+    // const elementY = element.getBoundingClientRect().y;
+    Scroll(section);
 }
 
 function Li(props) {

@@ -44,7 +44,7 @@ function Services() {
                     </div>
 
                     <div>
-                        <h3 className='services-h1'>Services I offer</h3>
+                        <h2 className='services-h1'>Services I offer</h2>
                         <p className='text-justify services-p'>I will help you with finging a solution and solve your problems, We use process design to create digital products. Besids that also help their business.</p>
 
                         <Skills />

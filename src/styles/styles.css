@@ -9,7 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: background-color var(--transition-delay), color var(--transition-delay);
+  transition: background-color var(--transition-delay), color var(--transition-delay), opacity var(--transition-delay);
 }
 
 body {
@@ -72,18 +72,18 @@ p {
 }
 
 /*------- HEADINGS -------*/
-h1 {
+h2 {
   color: var(--color-black);
-  text-transform: uppercase;
   font-weight: var(--font-regular);
-  font-size: 250%;
-  line-height: 100%;
+  font-size: 300%;
+  text-transform: capitalize;
+  margin-bottom: 30px;
 }
 
 h3 {
   color: var(--color-black);
   font-weight: var(--font-regular);
-  font-size: 300%;
+  font-size: 200%;
   text-transform: capitalize;
   margin-bottom: 30px;
 }
@@ -240,4 +240,53 @@ header .header-container .header-profile_picture {
   background: var(--color-primary);
   color: var(--color-primary);
   opacity: 0.9;
+}
+
+/*------- PORTFOLIO -------*/
+.section-portfolio {
+  background-color: var(--color-white);
+}
+
+.portfolio-project {
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
+  border-radius: var(--border-radius);
+}
+
+.portfolio-project-img,
+.portfolio-project-background {
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-project-background,
+.portfolio-project-text {
+  position: absolute;
+  opacity: 0;
+}
+
+.portfolio-project-background {
+  top: 0;
+  left: 0;
+  background-color: #000;
+}
+
+.portfolio-project-text {
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  color: white;
+  font-size: 120%;
+  font-weight: var(--font-bold);
+  text-align: center;
+  width: 100%;
+}
+
+.portfolio-project:hover .portfolio-project-background {
+  opacity: 0.5;
+}
+
+.portfolio-project:hover .portfolio-project-text {
+  opacity: 1;
 }/*# sourceMappingURL=styles.css.map */
