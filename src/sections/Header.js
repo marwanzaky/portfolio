@@ -22,7 +22,7 @@ function Header() {
                 <div className='flex header-container'>
                     <div className='w-[50%]'>
                         <div className='header-name'>Hy there,<br />I'm Marwan.</div>
-                        <div className='header-about'>Web developer with <strong>+3 years</strong> of experience building modern websites from the ground up to a fully complete one.</div>
+                        <p className='header-about'>I'm a web and game developer, and currently working as a full-time freelancer, I use modern technologies to develop a product from the ground up to a fully high-quality one.</p>
                         <button className='header-hire_me btn-base btn-full'>Hire me</button>
                         <button className='header-hire_me btn-base btn-ghost'>Portfolio</button>
 

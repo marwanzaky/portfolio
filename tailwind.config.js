@@ -3,7 +3,7 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     container: {
-      padding: '15rem',
+      padding: '10rem',
     }
   },
   plugins: [],

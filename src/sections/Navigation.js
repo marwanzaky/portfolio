@@ -12,9 +12,9 @@ function Navigation() {
 
                 <ul className="nav-ul">
                     <Li href='/' name='About' />
-                    <Li href='/shop' name='Services' />
-                    <Li href='/about' name='Portfolio' />
-                    <Li href='/contact' name='Testimonial' />
+                    <Li href='/services' name='Services' />
+                    <Li href='/portfolio' name='Portfolio' />
+                    <Li href='/testimonial' name='Testimonial' />
                 </ul>
 
                 <button className='nav-lets_talk btn-base btn-ghost'>Let's talk</button>

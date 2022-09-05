@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
 @tailwind base;
@@ -154,10 +154,6 @@ header .header-container .header-name {
   text-transform: capitalize;
   color: var(--color-black);
 }
-header .header-container .header-about {
-  margin-bottom: 50px;
-  color: var(--color-black);
-}
 header .header-container .header-analytics {
   padding-top: 50px;
 }
@@ -186,6 +182,11 @@ header .header-container .header-profile_picture {
   background-color: #fff;
 }
 
+.services-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 50px;
+}
 .services-container .services-service {
   margin-bottom: 15px;
   padding: 30px;
@@ -207,6 +208,36 @@ header .header-container .header-profile_picture {
 }
 .services-container .services-service .services-service-projects {
   color: var(--color-black);
+}
+.services-container .services-skills {
+  row-gap: 25px;
+  padding-left: 50px;
+  position: relative;
+}
+.services-container .services-skills::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 2px;
+  height: 50%;
+  transform: translate(-100%, -50%);
+  background: var(--color-primary);
+}
+.services-container .services-skills span {
+  position: relative;
+}
+.services-container .services-skills span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -5px;
+  width: 5px;
+  height: 5px;
+  transform: translate(-100%, -50%);
+  background: var(--color-primary);
+  color: var(--color-primary);
+  opacity: 0.9;
 }
 .services-container .services-analytics .services-analytic {
   margin-right: 50px;

@@ -27,11 +27,31 @@ function Service(props) {
     )
 }
 
+function Skills() {
+    return (
+        <div class="grid grid-cols-4 mb-16 services-skills">
+            <span>HTML5 &amp; CSS3</span>
+            <span>JavaScript / ES6</span>
+            <span>React.js</span>
+            <span>React Native</span>
+            <span>Sass &amp; Scss</span>
+            <span>Tailwind</span>
+            <span>Bootstrap</span>
+            <span>Firebase</span>
+            <span>Node.js</span>
+            <span>Express.js</span>
+            <span>MongoDB</span>
+            <span>Unity</span>
+            <span>C#</span>
+        </div>
+    )
+}
+
 function Services() {
     return (
         <section className='section-services'>
             <div className='xl:container xl:mx-auto'>
-                <div className='grid grid-cols-2 gap-[100px] services-container'>
+                <div className='services-container'>
                     <div className=''>
                         <Service icon='devices' name='Website design' projects='12' />
                         <Service icon='apps' name='Mobile apps' projects='4' />
@@ -40,11 +60,14 @@ function Services() {
 
                     <div className=''>
                         <h3 className='services-h1'>Services I offer</h3>
-                        <p className='text-justify services-p'>I will help you with finging a solution and solve your problems, We use process design to create digital products. Besids that also help their business. <br /> <br />We use process design to create digital products. Besids that also help their business.</p>
-                        <div className='flex flex-row services-analytics'>
+                        <p className='text-justify services-p'>I will help you with finging a solution and solve your problems, We use process design to create digital products. Besids that also help their business.</p>
+
+                        <Skills />
+
+                        {/* <div className='flex flex-row services-analytics'>
                             <Analytic total='+13' type={'Happy clients on work\nworldwide'} />
                             <Analytic total='+38' type={'Completed projects'} />
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
