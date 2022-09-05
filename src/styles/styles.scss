@@ -180,9 +180,8 @@ header {
             color: var(--color-black);
         }
 
-        .header-about {
-            // margin-bottom: 50px;
-            // color: var(--color-black);
+        .header-about a {
+            text-decoration: underline;
         }
 
         .header-analytics {
@@ -291,21 +290,6 @@ header {
                 color: var(--color-primary);
                 opacity: 0.9;
             }
-        }
-    }
-
-    .services-analytics .services-analytic {
-        margin-right: 50px;
-
-        .services-analytic-total {
-            font-size: 200%;
-            font-weight: var(--font-bold);
-            color: var(--color-black);
-        }
-
-        .services-analytic-type {
-            display: block;
-            color: var(--color-black);
         }
     }
 }

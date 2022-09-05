@@ -1,6 +1,10 @@
 import React from 'react';
 import Navigation from './Navigation';
 
+function HireMe() {
+    window.location.href = 'https://www.upwork.com/freelancers/~016c440becd0ed6d83';
+}
+
 function Analytic(props) {
     const style = { display: 'block' }
     const typeStr = props.type.split('\n').map(str => <span style={style}>{str}</span>);
@@ -15,15 +19,15 @@ function Analytic(props) {
 
 function Header() {
     return (
-        <header>
+        <header className='section-header'>
             <Navigation />
 
             <div className='xl:container xl:mx-auto'>
                 <div className='flex header-container'>
                     <div className='w-[50%]'>
                         <div className='header-name'>Hy there,<br />I'm Marwan.</div>
-                        <p className='header-about'>I'm a web and game developer, and currently working as a full-time freelancer, I use modern technologies to develop a product from the ground up to a fully high-quality one.</p>
-                        <button className='header-hire_me btn-base btn-full'>Hire me</button>
+                        <p className='header-about'>I'm a <a href='#'>web</a> and <a href='#'>game developer</a>, and currently working as a full-time freelancer, I use modern technologies to develop a product from the ground up to a fully high-quality one.</p>
+                        <button className='header-hire_me btn-base btn-full' onClick={HireMe}>Hire me</button>
                         <button className='header-hire_me btn-base btn-ghost'>Portfolio</button>
 
                         <div className='flex flex-row header-analytics'>

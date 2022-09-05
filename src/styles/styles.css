@@ -154,6 +154,9 @@ header .header-container .header-name {
   text-transform: capitalize;
   color: var(--color-black);
 }
+header .header-container .header-about a {
+  text-decoration: underline;
+}
 header .header-container .header-analytics {
   padding-top: 50px;
 }
@@ -238,16 +241,4 @@ header .header-container .header-profile_picture {
   background: var(--color-primary);
   color: var(--color-primary);
   opacity: 0.9;
-}
-.services-container .services-analytics .services-analytic {
-  margin-right: 50px;
-}
-.services-container .services-analytics .services-analytic .services-analytic-total {
-  font-size: 200%;
-  font-weight: var(--font-bold);
-  color: var(--color-black);
-}
-.services-container .services-analytics .services-analytic .services-analytic-type {
-  display: block;
-  color: var(--color-black);
 }/*# sourceMappingURL=styles.css.map */
