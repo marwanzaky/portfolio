@@ -4,6 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
 /*------- BASIC SETUP -------*/
 * {
@@ -19,19 +20,21 @@ body {
 }
 
 :root {
-    --font-family: 'Poppins', serif;
+    --font-family: 'Poppins', 'Inter', serif;
 
-    --color-white: #EEEEEE;
-    --color-primary: #00ADB5;
-    --color-primary-dark: #00ADB5;
+    --color-white: #fafafa;
 
+    --color-primary: #9b59b6;
+    --color-primary-dark: #8e44ad;
+
+    --color-grey: rgb(220, 220, 220);
     --color-black: #222831;
 
     --font-light: 300;
     --font-regular: 400;
     --font-bold: 700;
 
-    --border-radius: 0;
+    --border-radius: 8px;
     --line-width: 1px;
 
     --transition-delay: 0.2s;
@@ -48,7 +51,7 @@ header {
 }
 
 section {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 ul {
@@ -105,7 +108,7 @@ h4 {
     color: var(--color-black);
 
     font-weight: var(--font-bold);
-    font-size: 150%;
+    font-size: 120%;
 
     text-transform: capitalize;
 }
@@ -151,6 +154,10 @@ nav {
 
         .nav-ul li {
             padding: 0 20px;
+
+            a {
+                text-transform: uppercase;
+            }
         }
     }
 }
@@ -200,7 +207,7 @@ header {
         .header-profile_picture {
             margin: 0 auto;
             padding: 10px;
-            border: solid 2px var(--color-primary);
+            // border: solid 2px var(--color-primary);
             border-radius: 50%;
             width: 250px;
             height: 250px;
@@ -218,13 +225,17 @@ header {
         margin-bottom: 15px;
         padding: 30px;
 
-        border: solid 1px var(--color-white);
-        border-radius: 24px;
+        background-color: var(--color-white);
+        border-radius: var(--border-radius);
 
         .services-service-icon {
-            margin-right: 30px;
+            margin-right: 20px;
 
-            font-size: 200%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 300%;
             color: var(--color-primary);
 
             width: 64px;
@@ -236,6 +247,21 @@ header {
         }
 
         .services-service-projects {
+            color: var(--color-black);
+        }
+    }
+
+    .services-analytics .services-analytic {
+        margin-right: 50px;
+
+        .services-analytic-total {
+            font-size: 200%;
+            font-weight: var(--font-bold);
+            color: var(--color-black);
+        }
+
+        .services-analytic-type {
+            display: block;
             color: var(--color-black);
         }
     }

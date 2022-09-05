@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,15 +18,16 @@ body {
 }
 
 :root {
-  --font-family: "Poppins", serif;
-  --color-white: #EEEEEE;
-  --color-primary: #00ADB5;
-  --color-primary-dark: #00ADB5;
+  --font-family: "Poppins", "Inter", serif;
+  --color-white: #fafafa;
+  --color-primary: #9b59b6;
+  --color-primary-dark: #8e44ad;
+  --color-grey: rgb(220, 220, 220);
   --color-black: #222831;
   --font-light: 300;
   --font-regular: 400;
   --font-bold: 700;
-  --border-radius: 0;
+  --border-radius: 8px;
   --line-width: 1px;
   --transition-delay: 0.2s;
 }
@@ -40,7 +42,7 @@ header {
 }
 
 section {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 ul {
@@ -89,7 +91,7 @@ h3 {
 h4 {
   color: var(--color-black);
   font-weight: var(--font-bold);
-  font-size: 150%;
+  font-size: 120%;
   text-transform: capitalize;
 }
 
@@ -131,6 +133,9 @@ nav .nav-container .nav-logo {
 nav .nav-container .nav-ul li {
   padding: 0 20px;
 }
+nav .nav-container .nav-ul li a {
+  text-transform: uppercase;
+}
 
 /*------- HEADER -------*/
 header {
@@ -171,7 +176,6 @@ header .header-container .header-analytics .header-analytic .header-analytic-typ
 header .header-container .header-profile_picture {
   margin: 0 auto;
   padding: 10px;
-  border: solid 2px var(--color-primary);
   border-radius: 50%;
   width: 250px;
   height: 250px;
@@ -185,12 +189,15 @@ header .header-container .header-profile_picture {
 .services-container .services-service {
   margin-bottom: 15px;
   padding: 30px;
-  border: solid 1px var(--color-white);
-  border-radius: 24px;
+  background-color: var(--color-white);
+  border-radius: var(--border-radius);
 }
 .services-container .services-service .services-service-icon {
-  margin-right: 30px;
-  font-size: 200%;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 300%;
   color: var(--color-primary);
   width: 64px;
   height: 64px;
@@ -199,5 +206,17 @@ header .header-container .header-profile_picture {
   color: var(--color-black);
 }
 .services-container .services-service .services-service-projects {
+  color: var(--color-black);
+}
+.services-container .services-analytics .services-analytic {
+  margin-right: 50px;
+}
+.services-container .services-analytics .services-analytic .services-analytic-total {
+  font-size: 200%;
+  font-weight: var(--font-bold);
+  color: var(--color-black);
+}
+.services-container .services-analytics .services-analytic .services-analytic-type {
+  display: block;
   color: var(--color-black);
 }/*# sourceMappingURL=styles.css.map */
