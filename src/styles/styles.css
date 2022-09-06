@@ -298,6 +298,9 @@ header .header-container .header-profile_picture {
   background-color: var(--color-white);
   border-radius: var(--border-radius);
 }
+.section-open_source .open_source-repo .open_source-repo-name {
+  text-transform: initial;
+}
 .section-open_source .open_source-repo .open_source-repo-des {
   margin-bottom: 5px;
   text-overflow: ellipsis;
@@ -311,4 +314,5 @@ header .header-container .header-profile_picture {
 .section-open_source .open_source-repo:hover {
   box-shadow: 0 0 5px var(--color-grey);
   color: inherit;
+  transform: scale(1.02);
 }/*# sourceMappingURL=styles.css.map */

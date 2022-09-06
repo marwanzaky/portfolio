@@ -356,6 +356,10 @@ header {
         background-color: var(--color-white);
         border-radius: var(--border-radius);
 
+        .open_source-repo-name {
+            text-transform: initial;
+        }
+
         .open_source-repo-des {
             margin-bottom: 5px;
             text-overflow: ellipsis;
@@ -371,7 +375,7 @@ header {
         &:hover {
             box-shadow: 0 0 5px var(--color-grey);
             color: inherit;
-            // transform: scale(1.02);
+            transform: scale(1.02);
         }
     }
 }
