@@ -24,8 +24,7 @@ class OpenSource extends React.Component {
         super(props);
 
         this.state = {
-            repos: [],
-            loaded: false
+            repos: []
         };
     }
 
@@ -43,12 +42,12 @@ class OpenSource extends React.Component {
                     }
                 });
 
-                this.setState({ repos, loaded: true });
+                this.setState({ repos });
             }).catch(err => console.log(err));
     }
 
     render() {
-        const { repos, loaded } = this.state;
+        const { repos } = this.state;
         const data = repos.sort((a, b) => a.stars - b.stars).reverse();
         data.length = 6;
 
