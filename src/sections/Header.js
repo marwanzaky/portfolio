@@ -37,7 +37,7 @@ function Header() {
                     </div>
 
                     <div className='w-[50%]'>
-                        <img className='header-profile_picture' src='https://avatars.githubusercontent.com/u/64248203?v=4' alt='profile picture' />
+                        <img className='header-profile_picture' src='https://avatars.githubusercontent.com/u/64248203?v=4' alt='profile' />
                     </div>
                 </div>
             </div>
