@@ -1,12 +1,8 @@
 import React from 'react';
 
-import runRichImg from '../img/latest-work/run-rich.png';
-import bkIMg from '../img/latest-work/bk.png'
-import blindLoveImg from '../img/latest-work/blind-love.png'
-import drawStoneImg from '../img/latest-work/draw-stone-5.png'
-import carPuzzleImg from '../img/latest-work/car-puzzle2.png';
-import hillClimbRacingImg from '../img/latest-work/hill-climb-racing.png';
-import countMastersImg from '../img/latest-work/count-masters.png';
+import bkIMg from '../img/games/bk.png'
+import carPuzzleImg from '../img/games/car-puzzle2.png';
+import hillClimbRacingImg from '../img/games/hill-climb-racing.png';
 import storioImg from '../img/web/storio.png';
 import appImg from '../img/web/app.png';
 import app2Img from '../img/web/app-2.png';
@@ -44,13 +40,9 @@ function Portfolio() {
                     <Project url='#' src={foodImg} text='Food - React.js' />
 
                     {/* Games */}
-                    {/* <Project url='https://www.artstation.com/artwork/o2bDYk' src={runRichImg} text='Run Food - Unity' /> */}
                     <Project url='https://www.artstation.com/artwork/3qdEov' src={carPuzzleImg} text='Car Puzzle - Unity' />
                     <Project url='https://play.google.com/store/apps/details?id=com.aiwabox.blooming.kingdom' src={bkIMg} text='Blooming Kingdom - Unity' style={style} />
-                    {/* <Project url='https://www.artstation.com/artwork/d08yBQ' src={blindLoveImg} text='Blind Love - Unity' /> */}
-                    {/* <Project url='https://www.artstation.com/artwork/2q8L9g' src={drawStoneImg} text='Draw Stone - Unity' /> */}
                     <Project url='https://www.artstation.com/artwork/OmGe4k' src={hillClimbRacingImg} text='Climb Racing - Unity' />
-                    {/* <Project url='https://www.artstation.com/artwork/JerED0' src={countMastersImg} text='Count Masters - Unity' /> */}
                 </div>
             </div>
         </section >
