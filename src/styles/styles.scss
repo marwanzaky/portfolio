@@ -30,14 +30,16 @@ body {
 
     --color-primary: #9b59b6;
     --color-primary-dark: #8e44ad;
+    --color-primary-light: #f0e7f4;
 
-    --color-grey: rgb(220, 220, 220);
+    --color-grey: #57606a;
     --color-black: #222831;
 
     --font-light: 300;
     --font-regular: 400;
     --font-bold: 700;
 
+    --box-shadow: 0 0 5px rgb(220, 220, 220);
     --border-radius: 8px;
     --line-width: 1px;
 
@@ -86,10 +88,6 @@ p {
 }
 
 /*------- HEADINGS -------*/
-// h1 {
-
-// }
-
 h2 {
     color: var(--color-black);
 
@@ -117,7 +115,7 @@ h4 {
     font-size: 100%;
     text-transform: capitalize;
 
-    margin-bottom: 5px;
+    // margin-bottom: 5px;
 }
 
 /*------- BUTTONS -------*/
@@ -361,10 +359,10 @@ header {
         }
 
         .open_source-repo-des {
-            margin-bottom: 5px;
             text-overflow: ellipsis;
             overflow: hidden;
             white-space: nowrap;
+            // color: var(--color-grey);
         }
 
         .material-symbols-outlined {
@@ -373,7 +371,7 @@ header {
         }
 
         &:hover {
-            box-shadow: 0 0 5px var(--color-grey);
+            box-shadow: var(--box-shadow);
             color: inherit;
             transform: scale(1.02);
         }

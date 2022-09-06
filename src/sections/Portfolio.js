@@ -29,8 +29,7 @@ function Portfolio() {
     return (
         <section className='section-portfolio'>
             <div className="xl:container xl:mx-auto nav-container">
-                <h2>My latest works</h2>
-                {/* <p>Prefect solution for digital experience</p> */}
+                <h3>My latest works</h3>
 
                 <div className='grid grid-cols-4 gap-4'>
                     {/* Web */}

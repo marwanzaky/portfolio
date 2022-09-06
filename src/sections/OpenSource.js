@@ -2,19 +2,20 @@ import React from 'react';
 
 function Repo(props) {
     return (
-        <a href={props.href} className='open_source-repo'>
+        <a href={props.href} className={`open_source-repo ${props.lang}`}>
             <h4 className='open_source-repo-name'>{props.name}</h4>
             <div className='open_source-repo-des'>{props.des}</div>
 
-            <span className='inline-flex items-center mr-[10px] open_source-repo-lang'>
-                <span className='material-symbols-outlined'>code</span>
-                {props.lang}
-            </span>
+            <div className='inline-flex items-center'>
+                <span className='open_source-repo-lang mr-[10px]'>
+                    {props.lang}
+                </span>
 
-            <span className='inline-flex items-center open_source-repo-stars'>
-                <span className='material-symbols-outlined'>star</span>
-                {props.stars}
-            </span>
+                <span className='inline-flex items-center open_source-repo-stars'>
+                    <span className='material-symbols-outlined'>star</span>
+                    <span>{props.stars}</span>
+                </span>
+            </div>
         </a>
     )
 }
@@ -54,7 +55,7 @@ class OpenSource extends React.Component {
         return (
             <section className='section-open_source'>
                 <div className="xl:container xl:mx-auto nav-container">
-                    <h2>Open soucre github</h2>
+                    <h3>Open soucre github</h3>
 
                     <div className='grid grid-cols-2 gap-4'>
                         {data.map(el => <Repo href={el.url} name={el.name} lang={el.language} stars={el.stars} des={el.description} />)}
