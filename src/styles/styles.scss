@@ -14,7 +14,8 @@
     transition:
         background-color var(--transition-delay),
         color var(--transition-delay),
-        opacity var(--transition-delay);
+        opacity var(--transition-delay),
+        transform var(--transition-delay);
 }
 
 body {
@@ -114,8 +115,9 @@ h4 {
 
     font-weight: var(--font-bold);
     font-size: 100%;
-
     text-transform: capitalize;
+
+    margin-bottom: 5px;
 }
 
 /*------- BUTTONS -------*/
@@ -345,4 +347,28 @@ header {
 
 .portfolio-project:hover .portfolio-project-text {
     opacity: 1;
+}
+
+/*------- OPEN SOURCE -------*/
+.section-open_source {
+    .open_source-repo {
+        padding: 30px;
+        background-color: var(--color-white);
+        border-radius: var(--border-radius);
+
+        .open_source-repo-des {
+            margin-bottom: 5px;
+        }
+
+        .material-symbols-outlined {
+            margin-right: 5px;
+            font-size: 100%;
+        }
+
+        &:hover {
+            box-shadow: 0 0 5px var(--color-grey);
+            color: inherit;
+            // transform: scale(1.02);
+        }
+    }
 }

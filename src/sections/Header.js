@@ -26,7 +26,7 @@ function Header() {
                 <div className='flex header-container'>
                     <div className='w-[50%]'>
                         <div className='header-name'>Hy there,<br />I'm Marwan.</div>
-                        <p className='header-about'>I'm a <a href='#'>web</a> and <a href='#'>game developer</a>, and currently working as a full-time freelancer, I use modern technologies to develop a product from the ground up to a fully high-quality one.</p>
+                        <p className='header-about'>I'm a <a href='/'>web</a> and <a href='/'>game developer</a>, and currently working as a full-time freelancer, I use modern technologies to develop a product from the ground up to a fully high-quality one.</p>
                         <button className='header-hire_me btn-base btn-full' onClick={HireMe}>Hire me</button>
                         <button className='header-hire_me btn-base btn-ghost'>Portfolio</button>
 
@@ -37,7 +37,7 @@ function Header() {
                     </div>
 
                     <div className='w-[50%]'>
-                        <img className='header-profile_picture' src='https://avatars.githubusercontent.com/u/64248203?v=4' />
+                        <img className='header-profile_picture' src='https://avatars.githubusercontent.com/u/64248203?v=4' alt='profile picture' />
                     </div>
                 </div>
             </div>

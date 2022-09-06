@@ -2,13 +2,11 @@ import React from 'react';
 import Scroll from '../scroll';
 
 const scroll = section => {
-    // const element = document.querySelector(section);
-    // const elementY = element.getBoundingClientRect().y;
     Scroll(section);
 }
 
 function Li(props) {
-    return <li><a onClick={() => scroll(props.section)}>{props.name}</a></li>
+    return <li><a href='/' onClick={() => scroll(props.section)}>{props.name}</a></li>
 }
 
 function Navigation() {

@@ -17,11 +17,6 @@ const style = {
     gridColumnEnd: 4
 };
 
-const storioStyle = {
-    // gridColumnStart: 0,
-    // gridColumnEnd: 5
-};
-
 function Project(props) {
     return (
         <div className="portfolio-project" style={props.style} >

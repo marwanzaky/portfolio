@@ -5,7 +5,7 @@ function Service(props) {
         <div className='flex services-service'>
             <span class='services-service-icon material-symbols-outlined'>{props.icon}</span>
             <div className='flex flex-col justify-center'>
-                <h4 className='services-service-name'>{props.name}</h4>
+                <h4 className='services-service-name m-0'>{props.name}</h4>
                 <span className='services-service-projects'>{props.projects + ' Projects'}</span>
             </div>
         </div>

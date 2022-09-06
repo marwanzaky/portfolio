@@ -9,7 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: background-color var(--transition-delay), color var(--transition-delay), opacity var(--transition-delay);
+  transition: background-color var(--transition-delay), color var(--transition-delay), opacity var(--transition-delay), transform var(--transition-delay);
 }
 
 body {
@@ -93,6 +93,7 @@ h4 {
   font-weight: var(--font-bold);
   font-size: 100%;
   text-transform: capitalize;
+  margin-bottom: 5px;
 }
 
 /*------- BUTTONS -------*/
@@ -289,4 +290,22 @@ header .header-container .header-profile_picture {
 
 .portfolio-project:hover .portfolio-project-text {
   opacity: 1;
+}
+
+/*------- OPEN SOURCE -------*/
+.section-open_source .open_source-repo {
+  padding: 30px;
+  background-color: var(--color-white);
+  border-radius: var(--border-radius);
+}
+.section-open_source .open_source-repo .open_source-repo-des {
+  margin-bottom: 5px;
+}
+.section-open_source .open_source-repo .material-symbols-outlined {
+  margin-right: 5px;
+  font-size: 100%;
+}
+.section-open_source .open_source-repo:hover {
+  box-shadow: 0 0 5px var(--color-grey);
+  color: inherit;
 }/*# sourceMappingURL=styles.css.map */
