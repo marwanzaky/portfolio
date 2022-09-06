@@ -300,6 +300,9 @@ header .header-container .header-profile_picture {
 }
 .section-open_source .open_source-repo .open_source-repo-des {
   margin-bottom: 5px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .section-open_source .open_source-repo .material-symbols-outlined {
   margin-right: 5px;

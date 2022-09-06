@@ -19,23 +19,51 @@ function Repo(props) {
     )
 }
 
-function OpenSource() {
-    return (
-        <section className='section-open_source'>
-            <div className="xl:container xl:mx-auto nav-container">
-                <h2>Open soucre github</h2>
+class OpenSource extends React.Component {
+    constructor(props) {
+        super(props);
 
-                <div className='grid grid-cols-2 gap-4'>
-                    <Repo href='https://github.com/marwanzaky/Character-Controller' name='Character-Controller' lang='C#' stars='9' des='Unity Third Person Shooter Tool - Character Controller.' />
-                    <Repo href='https://github.com/marwanzaky/Enemy-Vision' name='Enemy-Vision' lang='C#' stars='5' des='Enemy Vision is a script collection to add vision cones.' />
-                    <Repo href='https://github.com/marwanzaky/Unity-Audio-Manager' name='Unity-Audio-Manager' lang='C#' stars='2' des='Unity Audio Manager is a tool to manage your Audios.' />
-                    <Repo href='https://github.com/marwanzaky/marwanzaky.com' name='marwanzaky.com' lang='JavaScript' stars='1' des='My personal website.   ' />
-                    <Repo href='https://github.com/marwanzaky/linktree-template' name='linktree-template' lang='JavaScript' stars='1' des='linktree template built with react.js, tailwindcss, and sass.' />
-                    <Repo href='https://github.com/marwanzaky/Unity-Pathfinder' name='Unity-Pathfinder' lang='C#' stars='1' des='Unity Pathfinder.' />
+        this.state = {
+            repos: [],
+            loaded: false
+        };
+    }
+
+    componentDidMount() {
+        fetch('https://api.github.com/users/marwanzaky/repos')
+            .then(response => response.json())
+            .then(data => {
+                const repos = data.map(el => {
+                    return {
+                        name: el.name,
+                        url: 'https://github.com/marwanzaky/' + el.name,
+                        language: el.language,
+                        stars: el.stargazers_count,
+                        description: el.description
+                    }
+                });
+
+                this.setState({ repos, loaded: true });
+            }).catch(err => console.log(err));
+    }
+
+    render() {
+        const { repos, loaded } = this.state;
+        const data = repos.sort((a, b) => a.stars - b.stars).reverse();
+        data.length = 6;
+
+        return (
+            <section className='section-open_source'>
+                <div className="xl:container xl:mx-auto nav-container">
+                    <h2>Open soucre github</h2>
+
+                    <div className='grid grid-cols-2 gap-4'>
+                        {data.map(el => <Repo href={el.url} name={el.name} lang={el.language} stars={el.stars} des={el.description} />)}
+                    </div>
                 </div>
-            </div>
-        </section >
-    )
+            </section >
+        )
+    }
 }
 
 export default OpenSource;

@@ -358,6 +358,9 @@ header {
 
         .open_source-repo-des {
             margin-bottom: 5px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
         }
 
         .material-symbols-outlined {
