@@ -6,7 +6,7 @@ function List(props) {
     return (
         <li className='footer-contacts-li'>
             <a className='footer-contacts-li-a' href={props.url} target='_blank'>
-                <img className='footer-contacts-li-a-icon' src={props.src} rel='noopener' />
+                <img className='footer-contacts-li-a-icon' src={props.src} rel='noreferrer' />
             </a>
         </li>
     )
