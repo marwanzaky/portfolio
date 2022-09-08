@@ -135,8 +135,12 @@ nav .nav-container .nav-logo {
 nav .nav-container .nav-ul li {
   padding: 0 20px;
 }
-nav .nav-container .nav-ul li a {
+nav .nav-container .nav-ul li button {
   text-transform: uppercase;
+  color: var(--color-black);
+}
+nav .nav-container .nav-ul li button:hover {
+  color: var(--color-primary-dark);
 }
 
 /*------- HEADER -------*/

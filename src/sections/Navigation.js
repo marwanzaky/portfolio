@@ -5,8 +5,8 @@ const scroll = section => {
     Scroll(section);
 }
 
-function Li(props) {
-    return <li><a href='/' onClick={() => scroll(props.section)}>{props.name}</a></li>
+function List(props) {
+    return <li><button onClick={() => scroll(props.section)}>{props.name}</button></li>
 }
 
 function Navigation() {
@@ -16,10 +16,10 @@ function Navigation() {
                 <a href='/' className="nav-logo">Mz</a>
 
                 <ul className="nav-ul">
-                    <Li section='.section-header' name='About' />
-                    <Li section='.section-services' name='Services' />
-                    <Li section='.section-portfolio' name='Portfolio' />
-                    <Li section='.section-testimonial' name='Testimonial' />
+                    <List section='.section-header' name='About' />
+                    <List section='.section-services' name='Services' />
+                    <List section='.section-portfolio' name='Portfolio' />
+                    <List section='.section-testimonial' name='Testimonial' />
                 </ul>
 
                 <button className='nav-lets_talk btn-base btn-ghost'>Let's talk</button>
