@@ -16,7 +16,7 @@ const style = {
 function Project(props) {
     return (
         <div className="portfolio-project" style={props.style} >
-            <a href={props.url} target="blank">
+            <a href={props.url} target="_blank">
                 <img className='portfolio-project-img' src={props.src} alt={props.text} />
                 <div className="portfolio-project-background"></div>
                 <span className="portfolio-project-text">{props.text}</span>
