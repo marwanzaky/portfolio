@@ -57,7 +57,7 @@ class OpenSource extends React.Component {
                 <div className="xl:container xl:mx-auto nav-container">
                     <h3>Open soucre github</h3>
 
-                    <div className='grid grid-cols-2 gap-4'>
+                    <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
                         {data.map(el => <Repo href={el.url} name={el.name} lang={el.language} stars={el.stars} des={el.description} />)}
                     </div>
                 </div>

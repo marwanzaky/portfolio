@@ -224,14 +224,29 @@ header {
 }
 
 /*------- SERVICES -------*/
+@media all and (min-width: 576px) {
+    .services-container {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media all and (min-width: 992px) {
+    .services-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 50px;
+    }
+}
+
 .section-services {
     background-color: #fff;
 }
 
 .services-container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 50px;
+    // display: grid;
+    // grid-template-columns: 1fr 2fr;
+    // gap: 50px;
 
     .services-service {
         margin-bottom: 15px;
@@ -389,7 +404,7 @@ header {
     padding: 30px 0;
 
     .footer-contacts-li-a-icon {
-        height: 28px;
+        height: 24px;
         margin-left: 15px;
         filter: invert(10%) sepia(21%) saturate(777%) hue-rotate(176deg) brightness(98%) contrast(86%);
 

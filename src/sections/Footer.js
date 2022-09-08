@@ -20,7 +20,7 @@ function Footer() {
                     <p>Copyright © 2021 Marwan Zaky. All rights reserved.</p>
                 </div>
 
-                <div className='w-[50%] flex flex-row justify-end footer-contacts'>
+                <div className='w-[50%] flex flex-row justify-end items-center footer-contacts'>
                     <List src={upworkIcon} alt='Upwork icon' url='https://github.com/marwanzaky' />
                     <List src={githubIcon} alt='Github icon' url='https://www.upwork.com/freelancers/~016c440becd0ed6d83' />
                 </div>
