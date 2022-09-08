@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+@import '@ionic/react/css/core.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,7 +10,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: background-color var(--transition-delay), color var(--transition-delay), opacity var(--transition-delay), transform var(--transition-delay);
+  transition: background-color var(--transition-delay), color var(--transition-delay), opacity var(--transition-delay), transform var(--transition-delay), filter 0.2s;
 }
 
 body {
@@ -39,10 +40,7 @@ button {
   text-transform: capitalize;
 }
 
-header {
-  padding: 50px 0;
-}
-
+header,
 section {
   padding: 50px 0;
 }
@@ -319,4 +317,21 @@ header .header-container .header-profile_picture {
   box-shadow: var(--box-shadow);
   color: inherit;
   transform: scale(1.02);
+}
+
+/*------- FOOTER -------*/
+.section-footer {
+  background-color: var(--color-white);
+  padding: 30px 0;
+}
+.section-footer .footer-contacts-li-a-icon {
+  height: 28px;
+  margin-left: 15px;
+  filter: invert(10%) sepia(21%) saturate(777%) hue-rotate(176deg) brightness(98%) contrast(86%);
+}
+.section-footer .footer-contacts-li-a-icon:hover {
+  filter: invert(44%) sepia(50%) saturate(689%) hue-rotate(238deg) brightness(85%) contrast(83%);
+}
+.section-footer p {
+  margin: 0;
 }/*# sourceMappingURL=styles.css.map */
