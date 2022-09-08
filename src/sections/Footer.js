@@ -5,8 +5,8 @@ import upworkIcon from '../assets/upwork.svg';
 function List(props) {
     return (
         <li className='footer-contacts-li'>
-            <a className='footer-contacts-li-a' href={props.url} target='_blank'>
-                <img className='footer-contacts-li-a-icon' src={props.src} rel='noopener noreferrer' />
+            <a className='footer-contacts-li-a' href={props.url} target='_blank' rel='noopener noreferrer'>
+                <img className='footer-contacts-li-a-icon' src={props.src} />
             </a>
         </li>
     )
