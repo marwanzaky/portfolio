@@ -14,7 +14,7 @@ function Service(props) {
 
 function Skills() {
     return (
-        <div class="grid grid-cols-4 mb-16 services-skills">
+        <div class="services-skills">
             <span>HTML5 &amp; CSS3</span>
             <span>JavaScript / ES6</span>
             <span>React.js</span>

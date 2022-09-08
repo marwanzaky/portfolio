@@ -15,12 +15,12 @@ function List(props) {
 function Footer() {
     return (
         <footer className='section-footer'>
-            <div className='xl:container xl:mx-auto nav-container flex flex-row'>
-                <div className='w-[50%]'>
+            <div className='xl:container xl:mx-auto nav-container flex flex-col sm:flex-row'>
+                <div className='w-full sm:w-[50%]'>
                     <p>Copyright © 2021 Marwan Zaky. All rights reserved.</p>
                 </div>
 
-                <div className='w-[50%] flex flex-row justify-end items-center footer-contacts'>
+                <div className='w-full sm:w-[50%] flex flex-row justify-center sm:justify-end items-center footer-contacts'>
                     <List src={upworkIcon} alt='Upwork icon' url='https://github.com/marwanzaky' />
                     <List src={githubIcon} alt='Github icon' url='https://www.upwork.com/freelancers/~016c440becd0ed6d83' />
                 </div>
