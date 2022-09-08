@@ -17,7 +17,7 @@ function Project(props) {
     return (
         <div className="portfolio-project" style={props.style} >
             <a href={props.url} target="_blank">
-                <img className='portfolio-project-img' src={props.src} alt={props.text} rel='noopener noreferrer' />
+                <img className='portfolio-project-img' src={props.src} alt={props.text} rel='noopener' />
                 <div className="portfolio-project-background"></div>
                 <span className="portfolio-project-text">{props.text}</span>
             </a>
