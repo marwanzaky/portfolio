@@ -17,7 +17,7 @@ function Footer() {
         <footer className='section-footer'>
             <div className='xl:container xl:mx-auto nav-container flex flex-col sm:flex-row'>
                 <div className='w-full sm:w-[50%]'>
-                    <p>Copyright © 2021 Marwan Zaky. All rights reserved.</p>
+                    <p>Copyright © 2022 Marwan Zaky.</p>
                 </div>
 
                 <div className='w-full sm:w-[50%] flex flex-row justify-center sm:justify-end items-center footer-contacts'>

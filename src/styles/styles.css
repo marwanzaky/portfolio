@@ -143,11 +143,10 @@ nav .nav-container .nav-ul li button:hover {
 
 /*------- HEADER -------*/
 header {
-  height: 100vh;
   background-color: var(--color-white);
 }
 header .header-container {
-  padding: 100px 0;
+  padding: 100px 0 0 0;
 }
 header .header-container .header-name {
   margin-bottom: 50px;
