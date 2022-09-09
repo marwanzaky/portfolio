@@ -37,22 +37,10 @@ class OpenSource extends React.Component {
     }
 
     componentDidMount() {
-        fetch('https://api.github.com/users/marwanzaky/repos')
+        fetch('https://marwanzaky-api.onrender.com/github/repos')
             .then(response => response.json())
-            .then(data => {
-                const repos = data.map(el => {
-                    return {
-                        name: el.name,
-                        url: 'https://github.com/marwanzaky/' + el.name,
-                        language: el.language,
-                        stars: el.stargazers_count,
-                        description: el.description,
-                        commits: 'x'
-                    }
-                });
-
-                this.setState({ repos });
-            }).catch(err => console.log(err));
+            .then(data => this.setState({ repos: data }))
+            .catch(err => console.log(err));
     }
 
     render() {
