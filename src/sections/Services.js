@@ -45,7 +45,7 @@ function Services() {
 
                     <div>
                         <h2 className='services-h1'>Services I offer</h2>
-                        <p className='text-justify services-p'>I will help you with finging a solution and solve your problems, We use process design to create digital products. Besids that also help their business.</p>
+                        <p className='services-p'>Someone who has a passion for their job and cares about helping you succeed and bringing value to your organization, I have been working as a software engineer for almost 7 years in various companies.</p>
 
                         <Skills />
                     </div>
