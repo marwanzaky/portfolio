@@ -23,7 +23,7 @@
 
 body {
     font-family: var(--font-family);
-    font-size: 1rem;
+    font-size: 15px;
 }
 
 :root {
@@ -35,7 +35,7 @@ body {
     --color-primary-dark: #8e44ad;
     --color-primary-light: #f0e7f4;
 
-    --color-grey: #57606a;
+    --color-grey: #778085;
     --color-black: #222831;
 
     --font-light: 300;
@@ -43,7 +43,7 @@ body {
     --font-bold: 700;
 
     --box-shadow: 0 0 5px rgb(220, 220, 220);
-    --border-radius: 8px;
+    --border-radius: 0.5rem;
     --line-width: 1px;
 
     --transition-delay: 0.2s;
@@ -392,7 +392,8 @@ header {
             text-overflow: ellipsis;
             overflow: hidden;
             white-space: nowrap;
-            // color: var(--color-grey);
+            color: var(--color-grey);
+            text-transform: lowercase;
         }
 
         .material-symbols-outlined {
@@ -407,6 +408,79 @@ header {
         }
     }
 }
+
+/*------- TIMELINES -------*/
+@media only screen and (max-width: 1039px) {
+    .section-timelines-grid {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 1040px) {
+    .section-timelines-grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 50px;
+    }
+}
+
+.section-timelines {
+    background-color: var(--color-white);
+
+    .section-timelines-img {
+        height: 100%;
+        // width: auto;
+        border-radius: var(--border-radius);
+    }
+
+    .section-timelines-timeline {
+        margin-bottom: 30px;
+
+        .section-timelines-timeline-title {
+            text-transform: uppercase;
+
+            .section-timelines-timeline-title-company {
+                color: var(--color-grey);
+            }
+        }
+
+        .section-timelines-timeline-duration {
+            color: var(--color-grey);
+            text-transform: uppercase;
+
+            margin-bottom: 10px;
+        }
+
+        .section-timelines-timeline-des {
+            white-space: pre-wrap;
+            // font-size: 80%;
+            color: var(--color-grey);
+        }
+    }
+}
+
+/*------- CONTACT -------*/
+.section-contact {
+    // background-color: var(--color-primary-light);
+
+    .section-contact-container {
+        height: 500px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+
+        .section-contact-p {
+            line-height: 1.5;
+            white-space: pre-wrap;
+        }
+    }
+}
+
 
 /*------- FOOTER -------*/
 .section-footer {

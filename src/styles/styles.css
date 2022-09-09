@@ -15,7 +15,7 @@
 
 body {
   font-family: var(--font-family);
-  font-size: 1rem;
+  font-size: 15px;
 }
 
 :root {
@@ -24,13 +24,13 @@ body {
   --color-primary: #9b59b6;
   --color-primary-dark: #8e44ad;
   --color-primary-light: #f0e7f4;
-  --color-grey: #57606a;
+  --color-grey: #778085;
   --color-black: #222831;
   --font-light: 300;
   --font-regular: 400;
   --font-bold: 700;
   --box-shadow: 0 0 5px rgb(220, 220, 220);
-  --border-radius: 8px;
+  --border-radius: 0.5rem;
   --line-width: 1px;
   --transition-delay: 0.2s;
 }
@@ -322,6 +322,8 @@ header .header-container .header-profile_picture {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  color: var(--color-grey);
+  text-transform: lowercase;
 }
 .section-open_source .open_source-repo .material-symbols-outlined {
   margin-right: 5px;
@@ -331,6 +333,60 @@ header .header-container .header-profile_picture {
   box-shadow: var(--box-shadow);
   color: inherit;
   transform: scale(1.02);
+}
+
+/*------- TIMELINES -------*/
+@media only screen and (max-width: 1039px) {
+  .section-timelines-grid {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 1040px) {
+  .section-timelines-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
+  }
+}
+.section-timelines {
+  background-color: var(--color-white);
+}
+.section-timelines .section-timelines-img {
+  height: 100%;
+  border-radius: var(--border-radius);
+}
+.section-timelines .section-timelines-timeline {
+  margin-bottom: 30px;
+}
+.section-timelines .section-timelines-timeline .section-timelines-timeline-title {
+  text-transform: uppercase;
+}
+.section-timelines .section-timelines-timeline .section-timelines-timeline-title .section-timelines-timeline-title-company {
+  color: var(--color-grey);
+}
+.section-timelines .section-timelines-timeline .section-timelines-timeline-duration {
+  color: var(--color-grey);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.section-timelines .section-timelines-timeline .section-timelines-timeline-des {
+  white-space: pre-wrap;
+  color: var(--color-grey);
+}
+
+/*------- CONTACT -------*/
+.section-contact .section-contact-container {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.section-contact .section-contact-container .section-contact-p {
+  line-height: 1.5;
+  white-space: pre-wrap;
 }
 
 /*------- FOOTER -------*/
