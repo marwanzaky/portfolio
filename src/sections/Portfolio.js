@@ -1,12 +1,12 @@
 import React from 'react';
 
-import bkIMg from '../img/games/bk.png'
-import carPuzzleImg from '../img/games/car-puzzle2.png';
-import hillClimbRacingImg from '../img/games/hill-climb-racing.png';
-import storioImg from '../img/web/storio.png';
-import appImg from '../img/web/app.png';
-import app2Img from '../img/web/app-2.png';
-import foodImg from '../img/web/food.png';
+import bkIMg from '../img/games/bk.jpg'
+import carPuzzleImg from '../img/games/car-puzzle2.jpg';
+import hillClimbRacingImg from '../img/games/hill-climb-racing.jpg';
+import storioImg from '../img/web/storio.jpg';
+import appImg from '../img/web/app.jpg';
+import app2Img from '../img/web/app-2.jpg';
+import foodImg from '../img/web/food.jpg';
 
 const style = {
     gridColumnStart: 2,
