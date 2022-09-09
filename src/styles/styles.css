@@ -128,7 +128,6 @@ nav .nav-container {
 }
 nav .nav-container .nav-logo {
   font-family: "Sacramento", cursive;
-  font-size: 500%;
 }
 nav .nav-container .nav-ul li {
   padding: 0 20px;
@@ -150,7 +149,6 @@ header .header-container {
 }
 header .header-container .header-name {
   margin-bottom: 50px;
-  font-size: 500%;
   line-height: 100%;
   letter-spacing: 1px;
   word-spacing: 4px;
