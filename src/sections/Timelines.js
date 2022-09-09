@@ -1,5 +1,4 @@
 import React from 'react';
-import workspaceIMg from '../img/workspace.png';
 
 function Timeline(props) {
     return (
@@ -33,11 +32,6 @@ function Timelines() {
         <section className='section-timelines'>
             <div className='xl:container xl:mx-auto section-timelines-container'>
                 <h2>Timelines</h2>
-
-                {/* <div className='section-timelines-grid'> */}
-                {/* <div>
-                    <img className='section-timelines-img' src={workspaceIMg}></img>
-                </div> */}
 
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
                     <Timeline duration='May 2021 &#8212; Present' title='Web Developer Developer' company='Upwork' des={upworkDes} />
