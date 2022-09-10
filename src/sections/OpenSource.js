@@ -38,7 +38,7 @@ class OpenSource extends React.Component {
     }
 
     componentDidMount() {
-        fetch('http://127.0.0.1:8000/github/repos')
+        fetch('https://marwanzaky-api.onrender.com/github/repos')
             .then(response => response.json())
             .then(data => {
                 this.setState({ repos: data });
