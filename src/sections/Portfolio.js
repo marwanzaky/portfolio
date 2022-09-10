@@ -31,7 +31,7 @@ function Portfolio() {
             <div className="xl:container xl:mx-auto nav-container">
                 <h2>My latest works</h2>
 
-                <div className='grid grid-cols-4 gap-4'>
+                <div className='grid grid-cols-1 md:grid-cols-4 gap-1 md:gap-4'>
                     {/* Web */}
                     <Project url='https://storio.netlify.app/' src={storioImg} text='Storio - React.js' style={{ filter: 'brightness(95%)' }} />
                     <Project url='#' src={appImg} text='App - React Native' />

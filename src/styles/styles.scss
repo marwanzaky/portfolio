@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
@@ -21,7 +21,9 @@
         filter var(--transition-delay);
 }
 
-body {
+body,
+div {
+    font-weight: var(--font-regular);
     font-family: var(--font-family);
     font-size: 15px;
 }
@@ -38,9 +40,10 @@ body {
     --color-grey: #778085;
     --color-black: #222831;
 
-    --font-light: 300;
-    --font-regular: 400;
-    --font-bold: 700;
+    --font-light: 200;
+    --font-regular: 300;
+    --font-bold: 500;
+    --font-extraBold: 600;
 
     --box-shadow: 0 0 5px rgb(220, 220, 220);
     --border-radius: 0.5rem;
@@ -89,13 +92,23 @@ p {
 
 /*------- HEADINGS -------*/
 h2 {
-    color: var(--color-black);
+    color: var(--color-primary);
 
-    font-weight: var(--font-regular);
-    font-size: 300%;
-    text-transform: capitalize;
+    font-weight: var(--font-extraBold);
+    font-size: 100%;
+    text-transform: uppercase;
 
     margin-bottom: 30px;
+
+    &::before {
+        display: inline-block;
+        content: " ";
+        background-color: var(--color-primary);
+        height: 2px;
+        width: 50px;
+        margin-bottom: 3px;
+        margin-right: 15px;
+    }
 }
 
 h3 {
@@ -111,7 +124,7 @@ h3 {
 h4 {
     color: var(--color-black);
 
-    font-weight: var(--font-bold);
+    font-weight: var(--font-extraBold);
     font-size: 100%;
     text-transform: capitalize;
 
@@ -289,7 +302,6 @@ header {
     .services-skills {
         row-gap: 25px;
 
-        margin-bottom: 15px;
         padding-left: 50px;
 
         position: relative;
@@ -364,7 +376,7 @@ header {
     transform: translate(50%, -50%);
     color: white;
     font-size: 120%;
-    font-weight: var(--font-bold);
+    font-weight: var(--font-extraBold);
     text-align: center;
     width: 100%;
 }
@@ -454,7 +466,6 @@ header {
 
         .section-timelines-timeline-des {
             white-space: pre-wrap;
-            // font-size: 80%;
             color: var(--color-grey);
         }
     }

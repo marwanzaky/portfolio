@@ -15,7 +15,7 @@ function Navigation() {
             <div className='xl:container xl:mx-auto nav-container'>
                 <a href='/' className='text-[300%] sm:text-[500%] nav-logo'>Mz</a>
 
-                <ul className='nav-ul'>
+                <ul className='hidden sm:block nav-ul'>
                     <List section='.section-header' name='About' />
                     <List section='.section-services' name='Services' />
                     <List section='.section-portfolio' name='Portfolio' />

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
 @import '@ionic/react/css/core.css';
@@ -13,7 +13,9 @@
   transition: background-color var(--transition-delay), color var(--transition-delay), opacity var(--transition-delay), transform var(--transition-delay), filter var(--transition-delay);
 }
 
-body {
+body,
+div {
+  font-weight: var(--font-regular);
   font-family: var(--font-family);
   font-size: 15px;
 }
@@ -26,9 +28,10 @@ body {
   --color-primary-light: #f0e7f4;
   --color-grey: #778085;
   --color-black: #222831;
-  --font-light: 300;
-  --font-regular: 400;
-  --font-bold: 700;
+  --font-light: 200;
+  --font-regular: 300;
+  --font-bold: 500;
+  --font-extraBold: 600;
   --box-shadow: 0 0 5px rgb(220, 220, 220);
   --border-radius: 0.5rem;
   --line-width: 1px;
@@ -73,11 +76,20 @@ p {
 
 /*------- HEADINGS -------*/
 h2 {
-  color: var(--color-black);
-  font-weight: var(--font-regular);
-  font-size: 300%;
-  text-transform: capitalize;
+  color: var(--color-primary);
+  font-weight: var(--font-extraBold);
+  font-size: 100%;
+  text-transform: uppercase;
   margin-bottom: 30px;
+}
+h2::before {
+  display: inline-block;
+  content: " ";
+  background-color: var(--color-primary);
+  height: 2px;
+  width: 50px;
+  margin-bottom: 3px;
+  margin-right: 15px;
 }
 
 h3 {
@@ -90,7 +102,7 @@ h3 {
 
 h4 {
   color: var(--color-black);
-  font-weight: var(--font-bold);
+  font-weight: var(--font-extraBold);
   font-size: 100%;
   text-transform: capitalize;
 }
@@ -230,7 +242,6 @@ header .header-container .header-profile_picture {
 }
 .services-container .services-skills {
   row-gap: 25px;
-  margin-bottom: 15px;
   padding-left: 50px;
   position: relative;
 }
@@ -296,7 +307,7 @@ header .header-container .header-profile_picture {
   transform: translate(50%, -50%);
   color: white;
   font-size: 120%;
-  font-weight: var(--font-bold);
+  font-weight: var(--font-extraBold);
   text-align: center;
   width: 100%;
 }
