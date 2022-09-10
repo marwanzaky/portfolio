@@ -18,7 +18,7 @@
         color var(--transition-delay),
         opacity var(--transition-delay),
         transform var(--transition-delay),
-        filter 0.2s;
+        filter var(--transition-delay);
 }
 
 body {

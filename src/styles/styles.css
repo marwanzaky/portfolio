@@ -10,7 +10,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: background-color var(--transition-delay), color var(--transition-delay), opacity var(--transition-delay), transform var(--transition-delay), filter 0.2s;
+  transition: background-color var(--transition-delay), color var(--transition-delay), opacity var(--transition-delay), transform var(--transition-delay), filter var(--transition-delay);
 }
 
 body {

@@ -1,4 +1,5 @@
 import React from 'react';
+import get_all_commits_count from '../getTotalCommits';
 
 function Repo(props) {
     return (
@@ -37,9 +38,19 @@ class OpenSource extends React.Component {
     }
 
     componentDidMount() {
-        fetch('https://marwanzaky-api.onrender.com/github/repos')
+        fetch('http://127.0.0.1:8000/github/repos')
             .then(response => response.json())
-            .then(data => this.setState({ repos: data }))
+            .then(data => {
+                this.setState({ repos: data });
+
+                const repos = data.map(el => {
+                    let commits;
+                    get_all_commits_count('marwanzaky', el.name, el.branch, res => commits = res);
+                    return { ...el, commits }
+                });
+
+                this.setState({ repos });
+            })
             .catch(err => console.log(err));
     }
 
@@ -51,7 +62,7 @@ class OpenSource extends React.Component {
         return (
             <section className='section-open_source'>
                 <div className="xl:container xl:mx-auto nav-container">
-                    <h3>Open soucre github</h3>
+                    <h2>Open soucre</h2>
 
                     <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
                         {data.map(el => <Repo href={el.url} name={el.name} lang={el.language} stars={el.stars} des={el.description} commits={el.commits} />)}
