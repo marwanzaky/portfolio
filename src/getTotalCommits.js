@@ -1,5 +1,5 @@
 const base_url = 'https://api.github.com';
-const token = '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';
+const token = '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';
 
 function httpGet(theUrl, return_headers) {
     var xmlHttp = new XMLHttpRequest();
