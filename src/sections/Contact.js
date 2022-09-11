@@ -17,7 +17,7 @@ function Contact() {
                     </div>
 
                     <div className='section-contact-child'>
-                        <img className='section-contact-img' src={workSpaceImg}></img>
+                        <img className='section-contact-img' src={workSpaceImg} alt='Work Space'></img>
                     </div>
                 </div>
             </div>
