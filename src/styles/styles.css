@@ -387,17 +387,12 @@ header .header-container .header-profile_picture {
 }
 
 /*------- CONTACT -------*/
-.section-contact .section-contact-container {
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 .section-contact .section-contact-container .section-contact-p {
   line-height: 1.5;
   white-space: pre-wrap;
+}
+.section-contact .section-contact-container .section-contact-img {
+  border-radius: var(--border-radius);
 }
 
 /*------- FOOTER -------*/
