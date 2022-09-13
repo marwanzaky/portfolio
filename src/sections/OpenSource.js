@@ -1,5 +1,4 @@
 import React from 'react';
-import get_all_commits_count from '../getTotalCommits';
 
 function Repo(props) {
     return (
