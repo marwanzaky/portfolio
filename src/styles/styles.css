@@ -162,8 +162,6 @@ header .header-container {
 header .header-container .header-name {
   margin-bottom: 50px;
   line-height: 100%;
-  letter-spacing: 1px;
-  word-spacing: 4px;
   text-transform: capitalize;
   color: var(--color-black);
 }
