@@ -189,7 +189,7 @@ nav {
 /*------- HEADER -------*/
 header {
     background-color: var(--color-bg);
-    border: solid 1px var(--color-bg-border);
+    border-bottom: solid 1px var(--color-bg-border);
 
     .header-container {
         padding: 100px 0 0 0;
@@ -227,7 +227,7 @@ header {
         .header-profile_picture {
             margin: 0 auto;
             padding: 10px;
-            // border: solid 2px var(--color-primary);
+            // border: solid 2px var(--color-bg-border);
             border-radius: 50%;
             width: 250px;
             height: 250px;
@@ -348,7 +348,8 @@ header {
 /*------- PORTFOLIO -------*/
 .section-portfolio {
     background-color: var(--color-bg);
-    border: solid 1px var(--color-bg-border);
+    border-top: solid 1px var(--color-bg-border);
+    border-bottom: solid 1px var(--color-bg-border);
 }
 
 .portfolio-project {
@@ -448,7 +449,8 @@ header {
 
 .section-timelines {
     background-color: var(--color-bg);
-    border: solid 1px var(--color-bg-border);
+    border-top: solid 1px var(--color-bg-border);
+    border-bottom: solid 1px var(--color-bg-border);
 
     .section-timelines-img {
         height: 100%;
@@ -500,7 +502,7 @@ header {
 /*------- FOOTER -------*/
 .section-footer {
     background-color: var(--color-bg);
-    border: solid 1px var(--color-bg-border);
+    border-top: solid 1px var(--color-bg-border);
     padding: 30px;
 
     .footer-contacts-li-a-icon {

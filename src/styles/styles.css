@@ -156,7 +156,7 @@ nav .nav-container .nav-ul li button:hover {
 /*------- HEADER -------*/
 header {
   background-color: var(--color-bg);
-  border: solid 1px var(--color-bg-border);
+  border-bottom: solid 1px var(--color-bg-border);
 }
 header .header-container {
   padding: 100px 0 0 0;
@@ -276,7 +276,8 @@ header .header-container .header-profile_picture {
 /*------- PORTFOLIO -------*/
 .section-portfolio {
   background-color: var(--color-bg);
-  border: solid 1px var(--color-bg-border);
+  border-top: solid 1px var(--color-bg-border);
+  border-bottom: solid 1px var(--color-bg-border);
 }
 
 .portfolio-project {
@@ -366,7 +367,8 @@ header .header-container .header-profile_picture {
 }
 .section-timelines {
   background-color: var(--color-bg);
-  border: solid 1px var(--color-bg-border);
+  border-top: solid 1px var(--color-bg-border);
+  border-bottom: solid 1px var(--color-bg-border);
 }
 .section-timelines .section-timelines-img {
   height: 100%;
@@ -403,7 +405,7 @@ header .header-container .header-profile_picture {
 /*------- FOOTER -------*/
 .section-footer {
   background-color: var(--color-bg);
-  border: solid 1px var(--color-bg-border);
+  border-top: solid 1px var(--color-bg-border);
   padding: 30px;
 }
 .section-footer .footer-contacts-li-a-icon {
