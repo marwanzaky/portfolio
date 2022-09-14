@@ -1,5 +1,25 @@
 import React from 'react';
 
+class Repository {
+    constructor(name, description, stars, language, commits, href) {  // Constructor
+        this.name = name;
+        this.description = description;
+        this.stars = stars;
+        this.language = language;
+        this.commits = commits;
+        this.href = href;
+    }
+}
+
+const repos = [
+    new Repository('Character-Controller', 'Unity Third Person Shooter Tool - Character Controller', '9', 'C#', '101', 'https://github.com/marwanzaky/Character-Controller'),
+    new Repository('Enemy-Vision', 'Enemy Vision is a script collection to add vision cones, raycast detection, and enemy patrolling behaviors to your game.', '5', 'C#', '33', 'https://github.com/marwanzaky/Enemy-Vision'),
+    new Repository('Unity-Audio-Manager', 'Unity Audio Manager is a tool to manage your Audios', '2', 'C#', '19', 'https://github.com/marwanzaky/Unity-Audio-Manager'),
+    new Repository('Quick-Tool', 'QuickTool is a tool window to manager all your prefabs in one place', '2', 'C#', '9', 'https://github.com/marwanzaky/Quick-Tool'),
+    new Repository('marwanzaky.com', 'My personal website', '1', 'JavaScript', '157', 'https://github.com/marwanzaky/marwanzaky.com'),
+    new Repository('linktree-template', 'Linktree react.js, and tailwindcss template', '1', 'JavaScript', '8', 'https://github.com/marwanzaky/linktree-template')
+]
+
 function Repo(props) {
     return (
         <a href={props.href} className={`open_source-repo ${props.lang}`} target="_blank" rel='noopener noreferrer'>
@@ -27,61 +47,18 @@ function Repo(props) {
     )
 }
 
-class OpenSource extends React.Component {
-    constructor(props) {
-        super(props);
+function OpenSource() {
+    return (
+        <section className='section-open_source'>
+            <div className="xl:container xl:mx-auto nav-container">
+                <h2>Open soucre</h2>
 
-        this.state = {
-            repos: []
-        };
-    }
-
-    componentDidMount() {
-        fetch('https://api.github.com/users/marwanzaky/repos')
-            .then(response => response.json())
-            .then(data => {
-                // OLD CODE....
-                // this.setState({ repos: data });
-                // const repos = data.map(el => {
-                //     let commits;
-                //     get_all_commits_count('marwanzaky', el.name, el.branch, res => commits = res);
-                //     return { ...el, commits }
-                // });
-
-                // NEW CODE...
-                const repos = data.map(el => {
-                    return {
-                        name: el.name,
-                        url: 'https://github.com/marwanzaky/' + el.name,
-                        language: el.language,
-                        stars: el.stargazers_count,
-                        description: el.description,
-                        commits: 'x'
-                    }
-                });
-
-                this.setState({ repos });
-            })
-            .catch(err => console.log(err));
-    }
-
-    render() {
-        const { repos } = this.state;
-        const data = repos.sort((a, b) => a.stars - b.stars).reverse();
-        data.length = 6;
-
-        return (
-            <section className='section-open_source'>
-                <div className="xl:container xl:mx-auto nav-container">
-                    <h2>Open soucre</h2>
-
-                    <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
-                        {data.map(el => <Repo href={el.url} name={el.name} lang={el.language} stars={el.stars} des={el.description} commits={el.commits} />)}
-                    </div>
+                <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
+                    {repos.map(el => <Repo name={el.name} lang={el.language} stars={el.stars} des={el.description} commits={el.commits} href={el.href} />)}
                 </div>
-            </section >
-        )
-    }
+            </div>
+        </section >
+    )
 }
 
 export default OpenSource;
