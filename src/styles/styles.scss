@@ -31,11 +31,13 @@ div {
 :root {
     --font-family: 'Poppins', 'Inter', serif;
 
-    --color-white: #fafafa;
+    --color-bg: #fafafa;
+    --color-bg-border: #d0d0d0;
+    // --color-bg-border: #d0d0d0;
 
     --color-primary: #9b59b6;
     --color-primary-dark: #8e44ad;
-    --color-primary-light: #f0e7f4;
+    --color-primary-light: #f7f2f9;
 
     --color-grey: #778085;
     --color-black: #222831;
@@ -144,7 +146,7 @@ h4 {
 
 .btn-full {
     background-color: var(--color-primary);
-    color: var(--color-white);
+    color: var(--color-bg);
     margin-right: 15px;
 }
 
@@ -154,7 +156,7 @@ h4 {
 
     &:hover {
         border: var(--line-width) solid var(--color-primary-dark);
-        color: var(--color-white);
+        color: var(--color-bg);
     }
 }
 
@@ -186,7 +188,8 @@ nav {
 
 /*------- HEADER -------*/
 header {
-    background-color: var(--color-white);
+    background-color: var(--color-bg);
+    border: solid 1px var(--color-bg-border);
 
     .header-container {
         padding: 100px 0 0 0;
@@ -267,8 +270,14 @@ header {
         margin-bottom: 15px;
         padding: 30px;
 
-        background-color: var(--color-white);
         border-radius: var(--border-radius);
+        border: solid 1px var(--color-bg-border);
+        background-color: var(--color-bg);
+
+        &:hover {
+            border: solid 1px var(--color-primary);
+            background-color: var(--color-primary-light);
+        }
 
         .services-service-icon {
             margin-right: 20px;
@@ -338,7 +347,8 @@ header {
 
 /*------- PORTFOLIO -------*/
 .section-portfolio {
-    background-color: var(--color-white);
+    background-color: var(--color-bg);
+    border: solid 1px var(--color-bg-border);
 }
 
 .portfolio-project {
@@ -389,8 +399,9 @@ header {
 .section-open_source {
     .open_source-repo {
         padding: 30px;
-        background-color: var(--color-white);
+        background-color: var(--color-bg);
         border-radius: var(--border-radius);
+        border: solid 1px var(--color-bg-border);
 
         .open_source-repo-name {
             text-transform: initial;
@@ -410,9 +421,11 @@ header {
         }
 
         &:hover {
-            box-shadow: var(--box-shadow);
+            border: solid 1px var(--color-primary);
+            background-color: var(--color-primary-light);
             color: inherit;
-            transform: scale(1.02);
+            
+            // transform: scale(1.02);
         }
     }
 }
@@ -434,7 +447,8 @@ header {
 }
 
 .section-timelines {
-    background-color: var(--color-white);
+    background-color: var(--color-bg);
+    border: solid 1px var(--color-bg-border);
 
     .section-timelines-img {
         height: 100%;
@@ -485,7 +499,8 @@ header {
 
 /*------- FOOTER -------*/
 .section-footer {
-    background-color: var(--color-white);
+    background-color: var(--color-bg);
+    border: solid 1px var(--color-bg-border);
     padding: 30px;
 
     .footer-contacts-li-a-icon {
