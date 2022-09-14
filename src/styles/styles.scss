@@ -459,10 +459,17 @@ header {
     }
 
     .section-timelines-timeline {
-        margin-bottom: 30px;
+        ul, li {
+            display: block;
+        }
+
+        li, p {
+            margin-bottom: 10px;
+        }
 
         .section-timelines-timeline-title {
             text-transform: uppercase;
+            margin-bottom: 10px;
 
             .section-timelines-timeline-title-company {
                 color: var(--color-grey);
@@ -476,7 +483,7 @@ header {
             margin-bottom: 10px;
         }
 
-        .section-timelines-timeline-des {
+        .section-timelines-timeline-des, p {
             white-space: pre-wrap;
             color: var(--color-grey);
         }
