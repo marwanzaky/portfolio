@@ -1,8 +1,13 @@
 import React from 'react';
 import Navigation from './Navigation';
+import scroll from '../scroll';
 
 function hireMe() {
     window.location.href = 'https://www.upwork.com/freelancers/~016c440becd0ed6d83';
+}
+
+function portfolio() {
+    scroll('.section-portfolio');
 }
 
 function Analytic(props) {
@@ -28,7 +33,7 @@ function Header() {
                         <div className='text-[300%] sm:text-[500%] header-name'>Hy there,<br />I'm Marwan.</div>
                         <p className='header-about'>I'm a <a href='/'>web</a> and <a href='/'>game developer</a>, and currently working as a full-time freelancer, I use modern technologies to develop a product from the ground up to a fully high-quality one.</p>
                         <button className='header-hire_me btn-base btn-full' onClick={hireMe}>Hire me</button>
-                        <button className='header-hire_me btn-base btn-ghost'>Portfolio</button>
+                        <button className='header-hire_me btn-base btn-ghost' onClick={portfolio}>Portfolio</button>
 
                         <div className='flex flex-row header-analytics'>
                             <Analytic total='+13' type={'Happy clients on work\nworldwide'} />
