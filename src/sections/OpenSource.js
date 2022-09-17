@@ -16,7 +16,7 @@ const repos = [
     new Repository('Enemy-Vision', 'Enemy Vision is a script collection to add vision cones, raycast detection, and enemy patrolling behaviors to your game.', '5', 'C#', '33', 'https://github.com/marwanzaky/Enemy-Vision'),
     new Repository('Unity-Audio-Manager', 'Unity Audio Manager is a tool to manage your Audios', '2', 'C#', '19', 'https://github.com/marwanzaky/Unity-Audio-Manager'),
     new Repository('Quick-Tool', 'QuickTool is a tool window to manager all your prefabs in one place', '2', 'C#', '9', 'https://github.com/marwanzaky/Quick-Tool'),
-    new Repository('marwanzaky.com', 'My personal website', '1', 'JavaScript', '157', 'https://github.com/marwanzaky/marwanzaky.com'),
+    new Repository('marwanzaky.com', 'My personal website', '2', 'JavaScript', '157', 'https://github.com/marwanzaky/marwanzaky.com'),
     new Repository('linktree-template', 'Linktree react.js, and tailwindcss template', '1', 'JavaScript', '8', 'https://github.com/marwanzaky/linktree-template')
 ]
 
