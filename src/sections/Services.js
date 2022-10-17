@@ -17,8 +17,8 @@ function Skills() {
         <div class="services-skills">
             <span>HTML5 &amp; CSS3</span>
             <span>JavaScript / ES6</span>
+            <span>Next.js</span>
             <span>React.js</span>
-            <span>React Native</span>
             <span>Sass &amp; Scss</span>
             <span>Tailwind</span>
             <span>Bootstrap</span>
