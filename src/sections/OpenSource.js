@@ -41,7 +41,7 @@ class OpenSource extends React.Component {
     }
 
     async componentDidMount() {
-        const res = await fetch('http://localhost:8001/api/v1/repos');
+        const res = await fetch('https://marwanzaky-api.vercel.app/api/v1/repos');
         const json = await res.json();
 
         this.setState({
@@ -53,9 +53,6 @@ class OpenSource extends React.Component {
 
     render() {
         const { loaded, data } = this.state;
-
-        if (!loaded)
-            return <></>
 
         return <section className='section-open_source'>
             <div className="xl:container xl:mx-auto nav-container">
