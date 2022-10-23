@@ -13,7 +13,7 @@ export default function Home() {
     <Head>
       <title>Hi, I&apos;m Marwan</title>
       <meta name='description' content="I'm a software engineer, currently working as a full-time freelancer." />
-      <link rel='icon' href='/favicon.ico' />
+      <link rel='icon' href='/favicon.png' />
     </Head>
 
     <Header />

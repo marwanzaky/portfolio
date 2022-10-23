@@ -37,9 +37,9 @@ class OpenSource extends React.Component {
 
                 <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
                     {
-                        repos.map(repo =>
+                        repos.map((repo, i) =>
                             <OpenSourceRepo
-                                key={repo.name}
+                                key={`repo ${i}`}
                                 href={repo.url}
                                 name={repo.name}
                                 des={repo.description}
