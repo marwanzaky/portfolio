@@ -6,7 +6,7 @@ function Timelines() {
         <div className='xl:container xl:mx-auto section-timelines-container'>
             <h2>Work experience</h2>
 
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-[1.25rem]'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-[10px]'>
                 <Timeline duration='May 2021 &#8212; Present' title='Web Developer Developer' company='Upwork' >
                     <ul>
                         <li>&#x2022;  Translate requirements into complicated but clean and efficient code.</li>
