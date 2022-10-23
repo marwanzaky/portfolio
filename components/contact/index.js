@@ -1,5 +1,5 @@
 import React from 'react';
-import Img from '../../utils/components/img';
+import Image from 'next/image';
 
 function hireMe() {
     window.location.href = 'https://www.upwork.com/freelancers/~016c440becd0ed6d83';
@@ -19,8 +19,8 @@ function Contact() {
                     <button className='btn-base btn-full' onClick={hireMe}>Hire me</button>
                 </div>
 
-                <div className='section-contact-child'>
-                    <Img className='section-contact-img' src='/img/workspace.jpg' alt='Work Space' />
+                <div className='section-contact-child' style={{ width: '100%', height: 'auto', position: 'relative' }}>
+                    <Image className='section-contact-img' src='/img/workspace.jpg' alt='Work Space' layout='fill' objectFit='contain' />
                 </div>
             </div>
         </div>

@@ -20,7 +20,7 @@ function Portfolio() {
 
                 {/* Games */}
                 <PortfolioProject url='https://www.artstation.com/artwork/3qdEov' src='/img/games/car-puzzle2.jpg' text='Car Puzzle - Unity' />
-                <PortfolioProject url='https://play.google.com/store/apps/details?id=com.aiwabox.blooming.kingdom' src='/img/games/bk.jpg' text='Blooming Kingdom - Unity' style={style} />
+                <PortfolioProject url='https://play.google.com/store/apps/details?id=com.aiwabox.blooming.kingdom' src='/img/games/bk.jpg' text='Blooming Kingdom - Unity' style={style} layout='fill' />
                 <PortfolioProject url='https://www.artstation.com/artwork/OmGe4k' src='/img/games/hill-climb-racing.jpg' text='Climb Racing - Unity' />
             </div>
         </div>
