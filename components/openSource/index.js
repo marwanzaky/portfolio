@@ -39,6 +39,7 @@ class OpenSource extends React.Component {
                     {
                         repos.map(repo =>
                             <OpenSourceRepo
+                                key={repo.name}
                                 href={repo.url}
                                 name={repo.name}
                                 des={repo.description}

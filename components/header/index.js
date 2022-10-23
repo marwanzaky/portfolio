@@ -1,5 +1,6 @@
 import React from 'react';
 import Navigation from '../navigation';
+import Link from 'next/link';
 import scroll from '../../utils/scroll';
 
 function hireMe() {
@@ -12,7 +13,7 @@ function portfolio() {
 
 function Analytic(props) {
     const style = { display: 'block' }
-    const typeStr = props.type.split('\n').map(str => <span style={style}>{str}</span>);
+    const typeStr = props.type.split('\n').map((str, i) => <span key={`Analytic Type${i}`} style={style}>{str}</span>);
 
     return <div className='header-analytic'>
         <span className='header-analytic-total'>{props.total}</span>
@@ -27,8 +28,11 @@ function Header() {
         <div className='xl:container xl:mx-auto'>
             <div className='header-container flex flex-col md:flex-row'>
                 <div className='w-full md:w-[50%]'>
-                    <div className='header-name'>Hy there,<br />I'm Marwan.</div>
-                    <p className='header-about'>I'm a <a href='/'>web</a> and <a href='/'>game developer</a>, and currently working as a full-time freelancer, I use modern technologies to develop a product from the ground up to a fully high-quality one.</p>
+                    <div className='header-name'>Hy there,<br />I&apos;m Marwan.</div>
+                    <p className='header-about'>
+                        I&apos;m a <Link href='/'><a>web</a></Link> and <Link href='/'><a>game developer</a></Link>, and currently working as a full-time freelancer, I use modern technologies to develop a product from the ground up to a fully high-quality one.
+                    </p>
+
                     <button className='header-hire_me btn-base btn-full' onClick={hireMe}>Hire me</button>
                     <button className='header-hire_me btn-base btn-ghost' onClick={portfolio}>Portfolio</button>
 
