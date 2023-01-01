@@ -16,7 +16,6 @@ function Footer() {
             </div>
 
             <div className='w-full sm:w-[50%] flex flex-row justify-center sm:justify-end items-center footer-contacts'>
-                <List src='./assets/upwork.svg' alt='Upwork icon' url='https://www.upwork.com/freelancers/~016c440becd0ed6d83' />
                 <List src='./assets/github.svg' alt='Github icon' url='https://github.com/marwanzaky' />
             </div>
         </div>
