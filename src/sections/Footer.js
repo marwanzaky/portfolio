@@ -1,6 +1,5 @@
 import React from 'react';
 import githubIcon from '../assets/github.svg';
-import upworkIcon from '../assets/upwork.svg';
 
 function List(props) {
     return (
