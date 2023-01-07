@@ -1,5 +1,3 @@
-import React from 'react';
-
 function Service({ name, icon, projects }) {
     return <div className='flex services-service'>
         <span className='services-service-icon material-symbols-outlined'>{icon}</span>
