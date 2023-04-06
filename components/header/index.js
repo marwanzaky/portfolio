@@ -21,7 +21,7 @@ function Analytic(props) {
     </div>
 }
 
-function Header() {
+export default function Header() {
     return <header className='section-header'>
         <Navigation />
 
@@ -49,5 +49,3 @@ function Header() {
         </div>
     </header>
 }
-
-export default Header;

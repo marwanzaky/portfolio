@@ -1,7 +1,7 @@
 import React from 'react';
 import Timeline from './timeline';
 
-function Timelines() {
+export default function Timelines() {
     return <section className='section-timelines'>
         <div className='xl:container xl:mx-auto section-timelines-container'>
             <h2>Work experience</h2>
@@ -43,5 +43,3 @@ function Timelines() {
         </div>
     </section>
 }
-
-export default Timelines;

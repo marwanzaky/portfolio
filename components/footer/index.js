@@ -8,7 +8,8 @@ function List(props) {
     </li>
 }
 
-function Footer() {
+
+export default function Footer() {
     return <footer className='section-footer'>
         <div className='xl:container xl:mx-auto nav-container flex flex-col sm:flex-row'>
             <div className='w-full sm:w-[50%]'>
@@ -21,5 +22,3 @@ function Footer() {
         </div>
     </footer>
 }
-
-export default Footer;

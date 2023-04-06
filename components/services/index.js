@@ -26,7 +26,7 @@ function Skills() {
     </div>
 }
 
-function Services() {
+export default function Services() {
     return <section className='section-services'>
         <div className='xl:container xl:mx-auto'>
             <div className='services-container'>
@@ -46,5 +46,3 @@ function Services() {
         </div>
     </section >
 }
-
-export default Services;

@@ -6,7 +6,7 @@ const style = {
     gridColumnEnd: 4
 };
 
-function Portfolio() {
+export default function Portfolio() {
     return <section className='section-portfolio'>
         <div className='xl:container xl:mx-auto nav-container'>
             <h2>My latest works</h2>
@@ -26,5 +26,3 @@ function Portfolio() {
         </div>
     </section >
 }
-
-export default Portfolio;

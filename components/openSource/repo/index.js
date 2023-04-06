@@ -1,6 +1,6 @@
 import React from 'react';
 
-function OpenSourceRepo({ href, name, des, lang, stars, commits }) {
+export default function OpenSourceRepo({ href, name, des, lang, stars, commits }) {
     return <a href={href} className={`open_source-repo ${lang}`} target="_blank" rel='noopener noreferrer'>
         <h4 className='open_source-repo-name'>{name}</h4>
         <div className='open_source-repo-des'>{des}</div>
@@ -24,5 +24,3 @@ function OpenSourceRepo({ href, name, des, lang, stars, commits }) {
         </div>
     </a>
 }
-
-export default OpenSourceRepo;

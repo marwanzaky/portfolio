@@ -10,7 +10,7 @@ function List({ name, section }) {
     return <li><button onClick={() => scroll(section)}>{name}</button></li>
 }
 
-function Navigation() {
+export default function Navigation() {
     return <nav>
         <div className='xl:container xl:mx-auto nav-container'>
             <Link href='/'>
@@ -28,5 +28,3 @@ function Navigation() {
         </div>
     </nav >
 }
-
-export default Navigation;

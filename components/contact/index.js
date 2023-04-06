@@ -9,7 +9,7 @@ const p = `I’d love to meet up with you to discuss your venture, and potential
 
 I’m interested in freelance opportunities – especially ambitious or large projects.`;
 
-function Contact() {
+export default function Contact() {
     return <section className='section-contact'>
         <div className='xl:container xl:mx-auto section-contact-container'>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
@@ -26,5 +26,3 @@ function Contact() {
         </div>
     </section>
 }
-
-export default Contact;
