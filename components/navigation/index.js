@@ -1,6 +1,6 @@
-import React from 'react';
 import Link from 'next/link';
-import Scroll from '../../utils/scroll';
+
+import Scroll from '@utils/scroll';
 
 const scroll = section => {
     Scroll(section);
