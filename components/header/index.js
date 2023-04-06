@@ -1,7 +1,8 @@
-import React from 'react';
-import Navigation from '../navigation';
 import Link from 'next/link';
-import scroll from '../../utils/scroll';
+
+import Navigation from '@components/navigation';
+
+import scroll from '@utils/scroll';
 
 function hireMe() {
     window.location.href = 'https://www.upwork.com/freelancers/~016c440becd0ed6d83';
