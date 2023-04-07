@@ -13,9 +13,9 @@ export default function Portfolio() {
 
             <div className='grid grid-cols-1 md:grid-cols-4 gap-1 md:gap-4'>
                 {/* Web */}
-                <PortfolioProject url='https://mamolio.com/' src='/img/web/storio.jpg' text='Storio - React.js' style={{ filter: 'brightness(95%)' }} />
-                <PortfolioProject url='#' src='/img/web/app.jpg' text='App - React Native' />
-                <PortfolioProject url='#' src='/img/web/app-2.jpg' text='Food - React Native' />
+                <PortfolioProject url='https://mamolio.com/' src='/img/web/storio.jpg' text='Mamolio - Next.js' style={{ filter: 'brightness(95%)' }} />
+                <PortfolioProject url='#' src='/img/web/app.jpg' text='App - React.js' />
+                <PortfolioProject url='#' src='/img/web/app-2.jpg' text='Food - React.js' />
                 <PortfolioProject url='#' src='/img/web/food.jpg' text='Food - React.js' />
 
                 {/* Games */}
