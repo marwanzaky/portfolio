@@ -26,7 +26,6 @@ class OpenSource extends React.Component {
         });
     }
 
-
     render() {
         const { loaded, data } = this.state;
         const repos = loaded ? data : repoDummies;
