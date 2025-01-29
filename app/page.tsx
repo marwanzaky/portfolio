@@ -14,18 +14,20 @@ export default function Page() {
 
 				<h3>Marouane E.</h3>
 
-				<p className="text-gray-400 !font-normal">Full Stack Developer</p>
+				<p className="text-gray-400 !font-normal">
+					Full Stack Developer @ ALPHA10X
+				</p>
 
 				<div className="flex gap-2 py-2">
-					{/* <a href="#">
+					{/* <a href="#" target="_blank">
 						<Icon name="upwork" className="hover:opacity-50" />
 					</a> */}
 
-					{/* <a href="#">
+					{/* <a href="#" target="_blank">
 						<Icon name="git" className="hover:opacity-50" />
 					</a> */}
 
-					<a href="https://github.com/marwanzaky">
+					<a href="https://github.com/marwanzaky" target="_blank">
 						<Icon name="github" className="hover:opacity-50" />
 					</a>
 				</div>
@@ -52,7 +54,7 @@ export default function Page() {
 				<div className="grid grid-cols-2 gap-4">
 					<Card
 						src="/imgs/card-cover.png"
-						title="Blooming Kingdom - Unity (c#)"
+						title="Blooming Kingdom - Unity & C#"
 						link="#"
 					>
 						Blooming Kingdom is a game I have been working on for more than a
@@ -61,56 +63,22 @@ export default function Page() {
 
 					<Card
 						src="/imgs/card-cover-1.png"
+						title="eCommerce - Next.js & Nest.js"
+						link="#"
+					>
+						Built a full-stack eCommerce w/ user auth and secure payments
+					</Card>
+
+					{/* <Card
+						src="/imgs/card-cover-1.png"
 						title="Idle game - Unity (c#)"
 						link="#"
 					>
 						Idle game with intuitive design and compelling progression systems
 						to maximize player engagement and retention.
-					</Card>
+					</Card> */}
 				</div>
 			</div>
-
-			{/* <div className="section">
-				<h1>Latest work</h1>
-
-				<div className="grid grid-cols-2 gap-4">
-					<Card
-						src="/imgs/card-cover.png"
-						title="What is Lorem Ipsum?"
-						link="#"
-					>
-						Lorem Ipsum is simply dummy text of the printing and typesetting
-						industry.
-					</Card>
-
-					<Card
-						src="/imgs/card-cover-1.png"
-						title="What is Lorem Ipsum?"
-						link="#"
-					>
-						Lorem Ipsum is simply dummy text of the printing and typesetting
-						industry.
-					</Card>
-
-					<Card
-						src="/imgs/card-cover-2.png"
-						title="What is Lorem Ipsum?"
-						link="#"
-					>
-						Lorem Ipsum is simply dummy text of the printing and typesetting
-						industry.
-					</Card>
-
-					<Card
-						src="/imgs/card-cover-3.png"
-						title="What is Lorem Ipsum?"
-						link="#"
-					>
-						Lorem Ipsum is simply dummy text of the printing and typesetting
-						industry.
-					</Card>
-				</div>
-			</div> */}
 
 			<div className="section">
 				<h1>Projects</h1>
@@ -120,7 +88,7 @@ export default function Page() {
 						title="character-controller"
 						lang="C#"
 						stars={16}
-						link="#"
+						link="https://github.com/marwanzaky/Character-Controller"
 					>
 						unity third person shooter tool
 					</SimpleCard>
@@ -128,17 +96,27 @@ export default function Page() {
 					<SimpleCard
 						title="next.js ecommerce"
 						lang="JavaScript"
-						stars={8}
-						link="#"
+						stars={5}
+						link="https://github.com/marwanzaky/next-ecommerce"
 					>
 						next.js ecommerce
 					</SimpleCard>
 
-					<SimpleCard title="fastapi-mongodb" lang="Python" stars={3} link="#">
+					<SimpleCard
+						title="fastapi-mongodb"
+						lang="Python"
+						stars={1}
+						link="https://github.com/marwanzaky/fastapi-mongodb"
+					>
 						user auth fastapi + mongodb
 					</SimpleCard>
 
-					<SimpleCard title="bevy-rust-game" lang="Rust" stars={1} link="#">
+					<SimpleCard
+						title="bevy-rust-game"
+						lang="Rust"
+						stars={1}
+						link="https://github.com/marwanzaky/bevy-top-down-movement"
+					>
 						a rust bevy game
 					</SimpleCard>
 				</div>

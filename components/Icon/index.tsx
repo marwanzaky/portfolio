@@ -12,11 +12,6 @@ export interface IIconProps {
 }
 
 export default function Icon({ className, name }: IIconProps) {
-	return (
-		<img
-			className={'w-4 ' + className}
-			src={'/svgs/' + name + '.svg'}
-			alt="My Happy SVG"
-		/>
-	);
+	const src = `/svgs/${name}.svg`;
+	return <img className={'w-4 ' + className} src={src} />;
 }
