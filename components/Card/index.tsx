@@ -11,6 +11,7 @@ export default function Card({ link, src, title, children }: ICardProps) {
 			<a
 				href={link}
 				className="mb-2 max-h-20 flex items-center overflow-hidden rounded hover:opacity-90"
+				target="_blank"
 			>
 				{/* <img className="h-full" src={src} /> */}
 			</a>

@@ -64,7 +64,7 @@ export default function Page() {
 					<Card
 						src="/imgs/card-cover-1.png"
 						title="eCommerce - Next.js & Nest.js"
-						link="#"
+						link="https://mamolio.vercel.app"
 					>
 						Built a full-stack eCommerce w/ user auth and secure payments
 					</Card>
