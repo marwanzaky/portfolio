@@ -85,39 +85,39 @@ export default function Page() {
 
 				<div className="grid grid-cols-2 gap-4">
 					<SimpleCard
-						title="character-controller"
+						title="Character-Controller"
 						lang="C#"
-						stars={16}
+						stars={17}
 						link="https://github.com/marwanzaky/Character-Controller"
 					>
-						unity third person shooter tool
+						Starter asset tool for a 3d person shooter game.
 					</SimpleCard>
 
 					<SimpleCard
-						title="next.js ecommerce"
+						title="Enemy-Vision"
+						lang="C#"
+						stars={25}
+						link="https://github.com/marwanzaky/Enemy-Vision"
+					>
+						Add vision cones, raycasting, and enemy patrols to your game.
+					</SimpleCard>
+
+					<SimpleCard
+						title="mern-ecommerce"
+						lang="TypeScript"
+						stars={6}
+						link="https://github.com/marwanzaky/mern-ecommerce"
+					>
+						Ecommerce app w/ user auth and secure payments
+					</SimpleCard>
+
+					<SimpleCard
+						title="node-ecommerce-api"
 						lang="JavaScript"
-						stars={5}
-						link="https://github.com/marwanzaky/next-ecommerce"
-					>
-						next.js ecommerce
-					</SimpleCard>
-
-					<SimpleCard
-						title="fastapi-mongodb"
-						lang="Python"
 						stars={1}
-						link="https://github.com/marwanzaky/fastapi-mongodb"
+						link="https://github.com/marwanzaky/node-ecommerce-api"
 					>
-						user auth fastapi + mongodb
-					</SimpleCard>
-
-					<SimpleCard
-						title="bevy-rust-game"
-						lang="Rust"
-						stars={1}
-						link="https://github.com/marwanzaky/bevy-top-down-movement"
-					>
-						a rust bevy game
+						Node.js, MongoDB and Mongoose Ecommerce API
 					</SimpleCard>
 				</div>
 			</div>

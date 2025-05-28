@@ -2,7 +2,7 @@ export interface ISimpleCardProps {
 	link: string;
 	title: string;
 	children: any;
-	lang: 'C#' | 'Python' | 'JavaScript' | 'Rust';
+	lang: 'C#' | 'Python' | 'JavaScript' | 'TypeScript' | 'Rust';
 	stars: number;
 }
 
@@ -23,6 +23,8 @@ export default function SimpleCard({
 		starColor = '#3572A5';
 	} else if (lang === 'Rust') {
 		starColor = '#DEA584';
+	} else if (lang === 'TypeScript') {
+		starColor = '#3572A5';
 	}
 
 	return (
