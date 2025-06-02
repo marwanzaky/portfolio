@@ -51,7 +51,7 @@ export default function Page() {
 			<div className="section">
 				<h1>Latest work</h1>
 
-				<div className="grid grid-cols-2 gap-4">
+				<div className="grid sm:grid-cols-2 gap-4">
 					<Card
 						src="/imgs/card-cover.png"
 						title="Blooming Kingdom - Unity & C#"
@@ -83,7 +83,7 @@ export default function Page() {
 			<div className="section">
 				<h1>Projects</h1>
 
-				<div className="grid grid-cols-2 gap-4">
+				<div className="grid sm:grid-cols-2 gap-4">
 					<SimpleCard
 						title="Character-Controller"
 						lang="C#"
@@ -125,7 +125,7 @@ export default function Page() {
 			<div className="section">
 				<h1>Languges</h1>
 
-				<div className="grid grid-cols-4 gap-4">
+				<div className="grid grid-cols-3 sm:grid-cols-4 gap-4">
 					{languages.map((lang) => (
 						<Link key={lang.name} link="#" icon={lang.icon}>
 							{lang.name}
@@ -156,7 +156,7 @@ export default function Page() {
 						startDate="Jan 2022"
 						endDate="Jun 2022"
 						employmentType="Freelance"
-					></Info>
+					/>
 
 					<Info
 						title="Unity Game Developer"
@@ -164,7 +164,7 @@ export default function Page() {
 						startDate="Jun 2020"
 						endDate="May 2022"
 						employmentType="Freelance"
-					></Info>
+					/>
 
 					<Info
 						title="Unity Game Developer"
@@ -172,7 +172,7 @@ export default function Page() {
 						startDate="Jul 2020"
 						endDate="Jun 2021"
 						employmentType="Freelance"
-					></Info>
+					/>
 				</div>
 			</div>
 		</div>

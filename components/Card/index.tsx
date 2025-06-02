@@ -20,7 +20,7 @@ export default function Card({ link, src, title, children }: ICardProps) {
 				<h3>{title}</h3>
 			</a>
 
-			<p className="text-justify text-gray-400 line-clamp-2">{children}</p>
+			<p className="text-gray-400 line-clamp-2">{children}</p>
 		</div>
 	);
 }
